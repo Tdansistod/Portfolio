@@ -341,18 +341,16 @@
             organization: organizationValue,
             mensaje: messageValue,
           };
-          fetch(
-            "https://script.google.com/macros/s/AKfycbzUoVofLh9syLUfKzU-TLBIOE-GPE9bSsp7Gsul2X93U20l_RTe6yrMmqdhGib7aavy/exec",
-            {
-              redirect: "follow",
-              method: "POST",
-              body: JSON.stringify(data),
-              headers: {
-                "Content-Type": "application/json",
-              },
-            }
-          )
-            .then((response) => response.json())
+
+          fetch("https://hook.us2.make.com/m6o9xvd3n7kn73rcj7k4s1ucdnc2wgax", {
+            redirect: "follow",
+            method: "POST",
+            body: JSON.stringify(data),
+            headers: {
+              "Content-Type": "application/json",
+            },
+          })
+            .then((response) => response)
             .then((data) => {
               console.log("Éxito:", data);
             })
