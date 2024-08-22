@@ -171,17 +171,19 @@
           </svg>
         </div>
         <div class="formContainer">
-          <form class="form">
+          <form class="form" id="myForm">
             <h4 class="formTitle">
               Contáctanos para tu Diseño Web Personalizado
             </h4>
             <div class="inputContainer">
-              <input type="text" name="name" required />
+              <input type="text" name="name" />
               <label htmlFor="">¿Cual es tu nombre? *</label>
+              <p class="error-message" id="nameError"></p>
             </div>
             <div class="inputContainer">
-              <input type="email" name="email" required />
+              <input type="text" name="email" />
               <label htmlFor="">¿Cual es tu correo electrónico? *</label>
+              <p class="error-message" id="emailError"></p>
             </div>
             <div class="inputContainer">
               <input type="text" name="organization" />
@@ -190,8 +192,9 @@
               </label>
             </div>
             <div class="inputContainer">
-              <textarea type="text" name="message" required></textarea>
+              <textarea type="text" name="message"></textarea>
               <label htmlFor="">Tu mensaje *</label>
+              <p class="error-message" id="messageError"></p>
             </div>
             <button class="buttonSubmit">Enviar</button>
           </form>
@@ -223,6 +226,7 @@
             <a
               class="contactLink"
               href="mailto:lautaronuriel@gmail.com?Subject=Solicito%20un%20presupuesto"
+              onclick="gtag_report_conversion()"
             >
               <svg
                 viewBox="0 0 192 192"
@@ -293,5 +297,76 @@
       </footer>
     </main>
     <div class="transition-slideIn"></div>
+    <script type="text/javascript">
+      const form = document.getElementById("myForm");
+      form.addEventListener("submit", (event) => {
+        // Prevenir el envío por defecto
+        event.preventDefault();
+
+        // Selecciona los campos y mensajes de error
+        const nameValue = document.querySelector('input[name="name"]').value;
+        const nameError = document.getElementById("nameError");
+        const emailValue = document.querySelector('input[name="email"]').value;
+        const emailError = document.getElementById("emailError");
+        const organizationValue = document.querySelector(
+          'input[name="organization"]'
+        ).value;
+        const messageValue = document.querySelector(
+          'textarea[name="message"]'
+        ).value;
+        const messageError = document.getElementById("messageError");
+        nameError.textContent = "";
+        emailError.textContent = "";
+        messageError.textContent = "";
+
+        let isValid = true;
+
+        if (nameValue.trim() === "") {
+          nameError.textContent = "El nombre es obligatorio";
+          isValid = false;
+        }
+        if (!validateEmail(emailValue)) {
+          emailError.textContent = "El email no es válido";
+          isValid = false;
+        }
+        if (messageValue.trim() === "") {
+          messageError.textContent = "El mensaje es obligatorio";
+          isValid = false;
+        }
+        // Aquí puedes hacer algo con los datos, como validación o envío a un servidor
+        if (isValid) {
+          const data = {
+            nombre: nameValue,
+            email: emailValue,
+            organization: organizationValue,
+            mensaje: messageValue,
+          };
+          fetch(
+            "https://script.google.com/macros/s/AKfycbzUoVofLh9syLUfKzU-TLBIOE-GPE9bSsp7Gsul2X93U20l_RTe6yrMmqdhGib7aavy/exec",
+            {
+              redirect: "follow",
+              method: "POST",
+              body: JSON.stringify(data),
+              headers: {
+                "Content-Type": "application/json",
+              },
+            }
+          )
+            .then((response) => response.json())
+            .then((data) => {
+              console.log("Éxito:", data);
+            })
+            .catch((error) => {
+              console.error("Error:", error);
+            });
+          form.reset();
+        }
+      });
+
+      function validateEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
+      }
+    </script>
   </body>
 </html>

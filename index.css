@@ -16,6 +16,13 @@ select,
 a {
   -webkit-tap-highlight-color: transparent;
 }
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: #fff !important;
+}
 :root {
   --color-main: #fff;
   --color-highlight: #024de6;
@@ -893,10 +900,17 @@ details {
 .inputContainer textarea {
   border: 3px solid var(--color-tertiary);
   font-size: var(--24px);
-  padding: var(--16px);
+  padding: var(--24px);
   border-radius: var(--48px);
   outline: none;
   background-color: transparent;
+  color: var(--color-main);
+}
+
+input:hover,
+input:focus,
+textarea:hover {
+  border: 3px solid var(--color-main);
 }
 .inputContainer textarea {
   min-height: 200px;
@@ -907,11 +921,12 @@ details {
   color: var(--color-main);
   background-color: var(--color-highlight);
   pointer-events: none;
-  left: var(--16px);
+  left: var(--32px);
   padding: 0 5px;
   font-size: var(--24px);
   margin-bottom: var(--16px);
   transform: translateY(-50%);
+  transition: transform 0.3s;
 }
 .buttonSubmit {
   background-color: var(--color-main);
@@ -945,8 +960,6 @@ details {
   justify-content: center;
   padding: var(--32px);
   color: var(--color-main);
-  background-color: var(--color-secondary);
-  border-radius: var(--48px);
 }
 .contactTitle {
   margin-top: 0;
@@ -967,6 +980,44 @@ details {
   border-radius: var(--48px);
   text-decoration: underline;
   font-size: var(--24px);
+}
+.error-message {
+  color: red;
+  background-color: var(--color-main);
+  width: fit-content;
+  padding: 0.5rem 2rem;
+  border-radius: var(--32px);
+  font-size: var(--24px);
+  margin-top: var(--16px);
+}
+.error-message:empty {
+  display: none;
+}
+@media only screen and (max-width: 1400px) {
+  .formContainer {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .form {
+    max-width: 750px;
+    padding: var(--24px);
+    width: calc(100% - (var(--24px) * 2));
+  }
+}
+@media only screen and (max-width: 750px) {
+  .contactTitle {
+    font-size: var(--32px);
+  }
+  .formTitle {
+    font-size: var(--32px);
+  }
+  .form label {
+    max-width: 85%;
+  }
+  .contact {
+    padding: var(--24px);
+    width: calc(100% - (var(--24px) * 2));
+  }
 }
 /* privacy policies and terms and conditions */
 .privacyPolicies,
