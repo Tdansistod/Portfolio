@@ -948,10 +948,22 @@ textarea:hover {
   touch-action: manipulation;
   margin-bottom: calc(var(--32px) - 5px);
 }
-
 .buttonSubmit:hover {
   color: white;
   background-color: var(--color-highlight);
+}
+.success {
+  width: var(--64px);
+  height: var(--64px);
+  padding: 0;
+  background-color: aquamarine;
+}
+.error {
+  width: var(--64px);
+  height: var(--64px);
+  padding: 0;
+  background-color: red;
+  color: var(--color-main);
 }
 .contact {
   display: flex;

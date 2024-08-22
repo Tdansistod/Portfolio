@@ -171,7 +171,7 @@
           </svg>
         </div>
         <div class="formContainer">
-          <form class="form" id="myForm">
+          <form class="form" id="myForm" method="POST">
             <h4 class="formTitle">
               Contáctanos para tu Diseño Web Personalizado
             </h4>
@@ -196,7 +196,8 @@
               <label htmlFor="">Tu mensaje *</label>
               <p class="error-message" id="messageError"></p>
             </div>
-            <button class="buttonSubmit">Enviar</button>
+            <button class="buttonSubmit" id="submit">Enviar</button>
+            <p class="error-message" id="messageSend"></p>
           </form>
           <div class="contact">
             <h4 class="contactTitle">Datos de Contacto</h4>
@@ -341,7 +342,7 @@
             organization: organizationValue,
             mensaje: messageValue,
           };
-
+          document.getElementById("submit").innerHTML = "Enviando...";
           fetch("https://hook.us2.make.com/m6o9xvd3n7kn73rcj7k4s1ucdnc2wgax", {
             redirect: "follow",
             method: "POST",
@@ -352,12 +353,20 @@
           })
             .then((response) => response)
             .then((data) => {
-              console.log("Éxito:", data);
+              document.getElementById("submit").innerHTML = "✓";
+              document.getElementById("submit").classList.add("success");
             })
             .catch((error) => {
-              console.error("Error:", error);
+              document.getElementById("submit").innerHTML = "!";
+              document.getElementById("submit").classList.add("error");
+              document.getElementById("messageSend").innerHTML = error;
             });
           form.reset();
+          setTimeout(() => {
+            document.getElementById("submit").innerHTML = "Enviar";
+            document.getElementById("submit").classList.remove("success");
+            document.getElementById("submit").classList.remove("error");
+          }, 3000);
         }
       });
 
