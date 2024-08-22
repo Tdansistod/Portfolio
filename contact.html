@@ -30,25 +30,24 @@
       function gtag() {
         dataLayer.push(arguments);
       }
-      window.gtag = gtag;
       gtag("js", new Date());
 
       gtag("config", "AW-16665838871");
     </script>
-    <!-- Google tag (gtag.js) event - delayed navigation helper -->
+    <!-- Event snippet for Contacto (1) conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
     <script>
-      // Helper function to delay opening a URL until a gtag event is sent.
-      // Call it in response to an action that should navigate to a URL.
-      function gtagSendEvent(url) {
+      function gtag_report_conversion(url) {
         var callback = function () {
-          if (typeof url === "string") {
+          if (typeof url != "undefined") {
             window.location = url;
           }
         };
-        gtag("event", "conversion_event_request_quote", {
+        gtag("event", "conversion", {
+          send_to: "AW-16665838871/Js7RCO22xswZEJeK8oo-",
+          value: 1000.0,
+          currency: "ARS",
           event_callback: callback,
-          event_timeout: 2000,
-          // <event_parameters>
         });
         return false;
       }
@@ -355,6 +354,7 @@
             .then((data) => {
               document.getElementById("submit").innerHTML = "✓";
               document.getElementById("submit").classList.add("success");
+              gtag_report_conversion();
             })
             .catch((error) => {
               document.getElementById("submit").innerHTML = "!";
