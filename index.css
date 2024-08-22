@@ -1027,9 +1027,10 @@ textarea:hover {
   .contactTitle {
     margin: auto;
     margin-bottom: var(--32px);
-    font-size: var(--48px);
+    font-size: var(--32px);
   }
   .formTitle {
+    text-align: center;
     font-size: var(--32px);
   }
   .form label {
