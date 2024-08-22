@@ -84,7 +84,14 @@ html.is-rendering .transition-slideIn {
   transition: transform 0.5s ease-in-out;
   transform: translateX(-200%);
 }
-
+@media only screen and (max-width: 750px) {
+  html.is-animating .transition-slideIn {
+    transition: transform 0.3s ease-in-out;
+  }
+  html.is-rendering .transition-slideIn {
+    transition: transform 0.3s ease-in-out;
+  }
+}
 /* menu */
 .navBar {
   display: flex;
@@ -1018,13 +1025,15 @@ textarea:hover {
 }
 @media only screen and (max-width: 750px) {
   .contactTitle {
-    font-size: var(--32px);
+    margin: auto;
+    margin-bottom: var(--32px);
+    font-size: var(--48px);
   }
   .formTitle {
     font-size: var(--32px);
   }
   .form label {
-    max-width: 85%;
+    max-width: 80%;
   }
   .contact {
     padding: var(--24px);
