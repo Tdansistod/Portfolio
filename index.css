@@ -23,6 +23,12 @@ input:-webkit-autofill:active {
   transition: background-color 5000s ease-in-out 0s;
   -webkit-text-fill-color: #fff !important;
 }
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+}
 :root {
   --color-main: #fff;
   --color-highlight: #024de6;
@@ -143,7 +149,7 @@ html.is-rendering .transition-slideIn {
 .navMobile {
   display: none;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 750px) {
   .navBar {
     justify-content: space-between;
     padding-left: var(--16px);
@@ -217,7 +223,7 @@ html.is-rendering .transition-slideIn {
   .navMobile input:checked ~ .hamburger > span:nth-child(1) {
     opacity: 1;
     transform: rotate(45deg);
-    background-color: var(--color-main);
+    background-color: black;
   }
 
   /*
@@ -233,11 +239,7 @@ html.is-rendering .transition-slideIn {
  */
   .navMobile input:checked ~ .hamburger > span:nth-child(3) {
     transform: rotate(-45deg);
-    background-color: var(--color-main);
-  }
-
-  .navMobile input:checked ~ .hamburger {
-    background-color: var(--color-secondary);
+    background-color: black;
   }
 
   /*
@@ -259,7 +261,7 @@ html.is-rendering .transition-slideIn {
     -webkit-font-smoothing: antialiased;
     transform-origin: 100% 0%;
     transform: translate(110%, 0%);
-    background-color: var(--color-secondary);
+    background-color: var(--color-main);
     transition: transform 0.4s;
     overflow: hidden;
     gap: 0.5rem;
@@ -272,16 +274,16 @@ html.is-rendering .transition-slideIn {
     justify-content: center;
     flex-direction: column;
     text-decoration: none;
-    color: var(--color-main);
+    color: black;
     transition: color 0.3s ease;
     border-radius: var(--24px);
     width: var(--96px);
     height: var(--80px);
     font-size: var(--20px);
+    font-weight: 600;
   }
   .menu li a img {
     width: var(--32px);
-    filter: invert(1);
   }
 
   /*
@@ -515,12 +517,6 @@ a {
   padding: var(--80px) var(--48px) calc(var(--96px) + var(--64px)) var(--48px);
   list-style: none;
   margin: 0;
-  background: linear-gradient(
-    270deg,
-    var(--color-secondary) 0%,
-    var(--color-tertiary) 100%
-  );
-  background-size: 100%;
 }
 .servicestitle {
   width: 100%;
@@ -592,7 +588,7 @@ details {
     flex-wrap: nowrap;
   }
   .servicesCard {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(192, 171, 255, 0.1);
     width: 80%;
     height: auto;
   }
@@ -826,8 +822,9 @@ details {
   padding-top: var(--16px);
   color: var(--color-main);
   height: var(--192px);
-  max-width: calc(1920px - var(--80px));
+  max-width: calc(1920px - var(--48px) * 2);
   gap: var(--48px);
+  z-index: 1;
 }
 .footer .logo {
   width: auto;
