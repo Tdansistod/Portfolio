@@ -23,12 +23,6 @@ input:-webkit-autofill:active {
   transition: background-color 5000s ease-in-out 0s;
   -webkit-text-fill-color: #fff !important;
 }
-main {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin: auto;
-}
 :root {
   --color-main: #fff;
   --color-highlight: #024de6;
@@ -671,6 +665,7 @@ details {
   content: "Waltersdorf • Waltersdorf • Waltersdorf • Waltersdorf • Waltersdorf • Waltersdorf • Waltersdorf • Waltersdorf • Waltersdorf • Waltersdorf • Waltersdorf • ";
 }
 .textRow2 {
+  color: var(--color-secondary);
   -webkit-animation: slide2 20s linear alternate infinite;
   animation: slide2 20s linear alternate infinite;
 }
