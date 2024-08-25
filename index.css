@@ -1,13 +1,30 @@
-@import url("https://fonts.googleapis.com/css2?family=Arbutus+Slab&family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap");
 html {
   scroll-behavior: smooth;
+}
+@font-face {
+  font-family: "Blinker";
+  src: url("fonts/Blinker-Regular.ttf");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Blinker";
+  src: url("fonts/Blinker-SemiBold.ttf");
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Blinker";
+  src: url("fonts/Blinker-Bold.ttf");
+  font-weight: 700;
+  font-display: swap;
 }
 body {
   margin: 0;
   font-family: "Blinker", sans-serif;
+  text-align: center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
 }
 input,
 textarea,
@@ -296,10 +313,12 @@ html.is-rendering .transition-slideIn {
   background-color: var(--color-highlight);
   width: 100%;
   max-width: 1920px;
-  height: 100vh;
-  height: 100svh;
+  height: 98vh;
+  height: 98svh;
   max-height: 1200px;
   overflow: hidden;
+  padding-bottom: var(--16px);
+  gap: var(--24px);
 }
 .textContainer {
   display: flex;
@@ -338,11 +357,11 @@ html.is-rendering .transition-slideIn {
   padding: 0 var(--24px);
   box-shadow: var(--shadow);
   transition: all 0.3s;
-  font-family: "Blinker";
+  font-family: "Blinker", sans-serif;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  margin-bottom: calc(var(--32px) - 5px);
+  margin-bottom: var(--16px);
 }
 
 .buttonHero:hover {
@@ -358,8 +377,8 @@ a {
     transform: translateX(0%);
   }
   100% {
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
   }
 }
 @keyframes backgroundSlide {
@@ -372,21 +391,31 @@ a {
     transform: translateX(-100%);
   }
 }
-.animatedBackground {
+.carouselWrapper {
   display: flex;
   width: 100%;
+  height: 15vh;
+  overflow: visible;
 }
-.background {
+.animatedCarousel {
+  display: flex;
+  width: 1920px;
+  overflow: visible;
+  height: 100%;
+  border-left: var(--24px) solid transparent;
+  gap: var(--24px);
+  animation: backgroundSlide 30s linear infinite;
+}
+.item {
+  border-radius: 0.5rem;
+  height: 100%;
+  box-shadow: var(--shadow);
   -webkit-user-drag: none;
   -khtml-user-drag: none;
   -moz-user-drag: none;
   -o-user-drag: none;
-  height: 40vh;
-  height: 40svh;
-  max-height: 700px;
-  -webkit-animation: backgroundSlide 50s infinite linear;
-  animation: backgroundSlide 50s infinite linear;
 }
+
 @media only screen and (max-width: 700px) {
   .titleHero {
     font-size: var(--48px);
@@ -397,9 +426,6 @@ a {
   .buttonHero {
     padding: 0.5rem 1.5rem;
     font-size: 1.2rem;
-  }
-  .background {
-    height: 40svh;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -655,7 +681,7 @@ details {
   align-items: center;
   font-size: var(--48px);
   word-spacing: var(--24px);
-  font-weight: bold;
+  font-weight: 700;
   width: var(--192px);
   height: var(--96px);
   -webkit-animation: slide 20s linear alternate infinite;
@@ -811,7 +837,7 @@ details {
   background-color: var(--color-highlight);
   margin: auto;
   margin-top: calc(-1 * var(--16px));
-  font-weight: bold;
+  font-weight: 600;
   width: calc(100% - var(--96px));
   padding: var(--48px);
   padding-top: var(--16px);
@@ -941,7 +967,7 @@ textarea:hover {
   width: 50%;
   padding: 0 var(--32px);
   transition: all 0.3s;
-  font-family: "Blinker";
+  font-family: "Blinker", sans-serif;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -1069,7 +1095,6 @@ textarea:hover {
   margin: var(--20px) 0;
 }
 .sectionText {
-  font-weight: 500;
   line-height: var(--32px);
   font-size: var(--24px);
 }
