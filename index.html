@@ -7,14 +7,45 @@
     <meta name="theme-color" content="#000000" />
     <meta name="author" content="Lautaro Waltersdorf" />
     <link rel="manifest" href="./manifest.json" />
-    <link rel="apple-touch-icon" href="./logo.svg" />
+    <link rel="apple-touch-icon" href="./img/logo.svg" />
     <link rel="stylesheet" href="./index.css" />
-    <title>Diseño Web Profesional y Personalizado | W Diseño Web</title>
+    <link rel="icon" type="image/x-icon" href="./img/logo.svg" />
+    <title>Diseño Web Profesional y Personalizado</title>
     <meta
       name="description"
       content="Desarrollamos sitios web atractivos y funcionales, adaptados a tus necesidades. ¡Haz que tu presencia online destaque!"
     />
     <link rel="canonical" href="https://xn--wdiseoweb-p6a.com/" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://xn--wdiseoweb-p6a.com/" />
+    <meta
+      property="og:title"
+      content="Diseño Web Profesional y Personalizado | W Diseño Web"
+    />
+    <meta
+      property="og:description"
+      content="Desarrollamos sitios web atractivos y funcionales, adaptados a tus necesidades. ¡Haz que tu presencia online destaque!"
+    />
+    <meta
+      property="og:image"
+      content="https://xn--wdiseoweb-p6a.com/img/W Diseño Web.webp"
+    />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://xn--wdiseoweb-p6a.com/" />
+    <meta
+      name="twitter:title"
+      content="Diseño Web Profesional y Personalizado | W Diseño Web"
+    />
+    <meta
+      name="twitter:description"
+      content="Desarrollamos sitios web atractivos y funcionales, adaptados a tus necesidades. ¡Haz que tu presencia online destaque!"
+    />
+    <meta
+      name="twitter:image"
+      content="https://xn--wdiseoweb-p6a.com/img/W Diseño Web.webp"
+    />
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -77,7 +108,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         <a href="./contact.html" class="button">Contactar</a>
       </nav>
       <nav class="navMobile">
-        <input type="checkbox" id="menu" />
+        <input type="checkbox" id="navButton" />
         <ul class="menu">
           <li>
             <a href="/">
@@ -157,7 +188,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
             </a>
           </li>
         </ul>
-        <label for="menu" class="hamburger">
+        <label for="navButton" class="hamburger">
           <span></span>
           <span></span>
           <span></span>
@@ -180,14 +211,14 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         <div class="heroImgContainer">
           <img
             class="heroImg"
-            src="./img/hero img.png"
+            src="./img/hero.webp"
             alt="Diseños"
             title="Diseños"
             loading="eager"
           />
           <img
             class="heroImg"
-            src="./img/hero img.png"
+            src="./img/hero.webp"
             alt="Diseños"
             title="Diseños"
             loading="eager"
@@ -196,7 +227,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
       </div>
       <div class="designs" id="designs">
         <h3 class="title">Diseños</h3>
-        <div class="grid">
+        <div class="cards">
           <a
             class="card"
             href="https://walterburgers.xn--wdiseoweb-p6a.com/"
@@ -207,24 +238,26 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
               <div class="designOverlay">
                 <p class="button">Visitar ➤</p>
               </div>
-              <div class="designTitleContainer">
-                <img src="./img/line.svg" class="line" />
-                <p class="designTitle">Walter Burgers</p>
-              </div>
               <img
                 class="designImg"
                 alt="Modelo de Diseño Web"
                 title="Modelo de Diseño Web"
-                src="./img/Walter Burgers.png"
+                src="./img/Walter Burgers.webp"
               />
-              <div class="designSubtitleContainer">
-                <p class="designTitle">Modelo de Hamburguesería</p>
+              <div class="description">
+                <div class="text">
+                  <div class="titleRow">
+                    <img src="./img/line.svg" class="line" />
+                    <p class="designTitle">Walter Burgers</p>
+                  </div>
+                  <p class="designTitle">Modelo de Hamburguesería</p>
+                </div>
               </div>
             </div>
           </a>
           <a
             class="card"
-            href="https://walterburgers.xn--wdiseoweb-p6a.com/"
+            href="https://tdansistod.github.io/sabrosurabolsonera/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -232,24 +265,28 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
               <div class="designOverlay">
                 <p class="button">Visitar ➤</p>
               </div>
-              <div class="designTitleContainer">
-                <img src="./img/line.svg" class="line" />
-                <p class="designTitle">Cine W</p>
-              </div>
               <img
                 class="designImg"
                 alt="Modelo de Diseño Web"
                 title="Modelo de Diseño Web"
-                src="./img/Walter Burgers.png"
+                src="./img/Sabrosura Bolsonera.webp"
               />
-              <div class="designSubtitleContainer">
-                <p class="designTitle">Modelo de Cine</p>
+              <div class="description">
+                <div class="text">
+                  <div class="titleRow">
+                    <img src="./img/line.svg" class="line" />
+                    <p class="designTitle">Sabrosura Bolsonera</p>
+                  </div>
+                  <p class="designTitle">
+                    Confitería - El Bolsón, Río Negro, Argentina
+                  </p>
+                </div>
               </div>
             </div>
           </a>
           <a
             class="card"
-            href="https://walterburgers.xn--wdiseoweb-p6a.com/"
+            href="https://waltersdorf.xn--wdiseoweb-p6a.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -257,43 +294,20 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
               <div class="designOverlay">
                 <p class="button">Visitar ➤</p>
               </div>
-              <div class="designTitleContainer">
-                <img src="./img/line.svg" class="line" />
-                <p class="designTitle">Sabrosura Bolsonera</p>
-              </div>
               <img
                 class="designImg"
                 alt="Modelo de Diseño Web"
                 title="Modelo de Diseño Web"
-                src="./img/Walter Burgers.png"
+                src="./img/waltersdorf.webp"
               />
-              <div class="designSubtitleContainer">
-                <p class="designTitle">Confitería - El Bolsón, Argentina</p>
-              </div>
-            </div>
-          </a>
-          <a
-            class="card"
-            href="https://walterburgers.xn--wdiseoweb-p6a.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div class="designContent">
-              <div class="designOverlay">
-                <p class="button">Visitar ➤</p>
-              </div>
-              <div class="designTitleContainer">
-                <img src="./img/line.svg" class="line" />
-                <p class="designTitle">Waltersdorf</p>
-              </div>
-              <img
-                class="designImg"
-                alt="Modelo de Diseño Web"
-                title="Modelo de Diseño Web"
-                src="./img/Walter Burgers.png"
-              />
-              <div class="designSubtitleContainer">
-                <p class="designTitle">Modelo de Mueblería</p>
+              <div class="description">
+                <div class="text">
+                  <div class="titleRow">
+                    <img src="./img/line.svg" class="line" />
+                    <p class="designTitle">Waltersdorf</p>
+                  </div>
+                  <p class="designTitle">Modelo de Mueblería</p>
+                </div>
               </div>
             </div>
           </a>
@@ -386,10 +400,9 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
               </summary>
               <p class="serviceDescription">
                 Nos encargamos de todo el proceso de despliegue de tu sitio web,
-                así como de la gestión de dominio y hosting. Desde la elección
-                del nombre de dominio hasta la configuración del alojamiento,
-                nos aseguramos de que todo esté en su lugar para que tu sitio
-                web funcione sin problemas.
+                así como de la gestión de dominio y hosting. Nos aseguramos de
+                que todo esté en su lugar para que tu sitio web funcione sin
+                problemas.
               </p>
             </details>
           </li>
@@ -563,6 +576,10 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
     <script src="https://unpkg.com/swup@4"></script>
     <script>
       const swup = new Swup();
+      //swup hooks
+      swup.hooks.on("page:view", (visit) => {
+        document.getElementById("navButton").checked = false;
+      });
     </script>
   </body>
 </html>

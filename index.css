@@ -48,15 +48,17 @@ input:-webkit-autofill:active {
   --color-font: #767676;
   --color-secondary: #c2d9f9;
   --shadow: 5px 5px 0px rgba(0, 0, 0, 0.25);
-  --font-smaller: 1.1rem;
-  --font-small: 1.25rem;
-  --font-medium: 1.5rem;
-  --font-large: 1.75rem;
-  --font-xlarge: 3rem;
+  --font-smaller: 1rem;
+  --font-small: 1.1rem;
+  --font-medium: 1.2rem;
+  --font-large: 1.5rem;
+  --font-xlarge: 2rem;
 }
 @media only screen and (min-width: 700px) {
   :root {
     --font-smaller: 1.3rem;
+    --font-small: 1.5rem;
+    --font-medium: 2rem;
     --font-large: 3rem;
     --font-xlarge: 4rem;
   }
@@ -120,7 +122,7 @@ html.is-rendering .transition-slideIn {
   color: var(--color-background);
   box-sizing: border-box;
   cursor: pointer;
-  font-size: var(--font-small);
+  font-size: var(--font-smaller);
   padding: 0.6rem 1.5rem;
   user-select: none;
   -webkit-user-select: none;
@@ -142,7 +144,6 @@ html.is-rendering .transition-slideIn {
 .logo {
   width: 2.5rem;
   height: 2.5rem;
-  z-index: 1;
 }
 .logoContainer {
   display: flex;
@@ -153,7 +154,6 @@ html.is-rendering .transition-slideIn {
   border-radius: 50%;
   background-color: var(--color-background);
   box-shadow: var(--shadow);
-  z-index: 1;
 }
 .nav {
   display: flex;
@@ -170,7 +170,7 @@ html.is-rendering .transition-slideIn {
 }
 .anchorItem {
   text-decoration: none;
-  font-size: var(--font-small);
+  font-size: var(--font-smaller);
   color: black;
   font-weight: 600;
   font-style: normal;
@@ -362,7 +362,9 @@ html.is-rendering .transition-slideIn {
 }
 /* Designs */
 .designs {
-  background: url("./img/design background.png");
+  background: url("./img/design\ background.webp");
+  background-repeat: no-repeat;
+  background-color: var(--color-main);
   width: 90%;
   max-width: 100rem;
   border-radius: 2rem;
@@ -371,18 +373,17 @@ html.is-rendering .transition-slideIn {
   color: var(--color-background);
   padding: 8rem 1rem;
 }
-.grid {
-  display: grid;
-  place-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  gap: 8rem;
-  max-width: 80rem;
-  margin-inline: auto;
-}
 .title {
   margin-top: 0;
+  margin-bottom: 8rem;
   font-size: var(--font-xlarge);
   font-weight: 600;
+}
+.designs .cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8rem;
 }
 .designs .card {
   border-radius: 1rem;
@@ -390,31 +391,41 @@ html.is-rendering .transition-slideIn {
   background-color: rgba(255, 255, 255, 0.3);
 }
 .designContent {
+  display: flex;
+  flex-direction: column;
   position: relative;
-  max-width: 30rem;
   border-radius: 0.8rem;
-  background-color: rgba(1, 1, 1, 0.1);
+  background-color: rgba(0, 0, 0, 0.4);
   overflow: clip;
 }
-.designTitleContainer,
-.designSubtitleContainer {
+.description {
   display: flex;
-  align-items: center;
-  padding: 0.5rem;
-  gap: 1rem;
-}
-.designSubtitleContainer {
+  flex-direction: column;
   justify-content: space-between;
+  padding: 1rem;
+}
+.description .row {
+  display: flex;
 }
 .designTitle {
+  font-size: var(--font-small);
   margin: 0;
-  font-size: var(--font-medium);
 }
 .line {
   width: 4rem;
 }
 .designImg {
   width: 100%;
+  max-width: 70rem;
+}
+.text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.titleRow {
+  display: flex;
+  gap: 1rem;
 }
 .designOverlay {
   display: flex;
@@ -442,6 +453,14 @@ html.is-rendering .transition-slideIn {
   margin-top: 5rem;
   padding: 5rem 1rem 10rem 1rem;
   color: var(--color-font);
+  margin-inline: auto;
+}
+.grid {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 8rem;
+  max-width: 80rem;
   margin-inline: auto;
 }
 .services .grid {
@@ -480,7 +499,7 @@ details[open] summary {
   margin-bottom: 1rem;
 }
 .serviceTitle {
-  font-size: calc(var(--font-medium) + 0.5rem);
+  font-size: var(--font-medium);
   font-weight: 600;
   margin: 0;
 }
@@ -488,7 +507,7 @@ summary::-webkit-details-marker {
   display: none;
 }
 .serviceDescription {
-  font-size: var(--font-medium);
+  font-size: var(--font-small);
   font-weight: 600;
   margin: 0;
 }
@@ -639,7 +658,7 @@ details {
 .prices .card {
   border-radius: 3rem;
   padding: 2rem;
-  font-size: var(--font-medium);
+  font-size: var(--font-small);
   width: 25rem;
   background-color: rgba(1, 1, 1, 0.2);
   border: 2px solid transparent;
@@ -650,7 +669,7 @@ details {
 }
 .prices .card p {
   text-align: center;
-  font-size: var(--font-medium);
+  font-size: var(--font-small);
 }
 .prices .standard {
   border-color: var(--color-background);
@@ -666,7 +685,7 @@ details {
 }
 .prices ul {
   padding-left: 1rem;
-  font-size: var(--font-medium);
+  font-size: var(--font-small);
   font-weight: 600;
   text-align: left;
 }
@@ -750,7 +769,7 @@ details {
   gap: 3rem;
 }
 .link {
-  font-size: var(--font-medium);
+  font-size: var(--font-small);
   text-decoration: underline;
 }
 .link:hover {
@@ -781,7 +800,7 @@ details {
   padding: 1rem 1.5rem;
   min-width: 20rem;
   border-radius: 2rem;
-  color: black;
+  color: white;
   background-color: rgba(255, 255, 255, 0.3);
 }
 .whatsapp {

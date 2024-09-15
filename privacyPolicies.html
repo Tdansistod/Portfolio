@@ -7,18 +7,45 @@
     <meta name="theme-color" content="#000000" />
     <meta name="author" content="Lautaro Waltersdorf" />
     <link rel="manifest" href="./manifest.json" />
-    <link rel="apple-touch-icon" href="./logo.svg" />
+    <link rel="apple-touch-icon" href="./img/logo.svg" />
+    <link rel="icon" type="image/x-icon" href="./img/logo.svg" />
     <link rel="stylesheet" href="./index.css" />
-    <title>Aviso de privacidad integral | W Diseño Web</title>
+    <title>Aviso de privacidad integral</title>
     <meta
       name="description"
       content="Desarrollamos sitios web atractivos y funcionales, adaptados a tus necesidades. ¡Haz que tu presencia online destaque!"
     />
     <link rel="canonical" href="/privacyPolicies" />
-    <script src="https://unpkg.com/swup@4"></script>
-    <script type="text/javascript">
-      const swup = new Swup();
-    </script>
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://xn--wdiseoweb-p6a.com/" />
+    <meta
+      property="og:title"
+      content="Diseño Web Profesional y Personalizado | W Diseño Web"
+    />
+    <meta
+      property="og:description"
+      content="Desarrollamos sitios web atractivos y funcionales, adaptados a tus necesidades. ¡Haz que tu presencia online destaque!"
+    />
+    <meta
+      property="og:image"
+      content="https://xn--wdiseoweb-p6a.com/img/W Diseño Web.webp"
+    />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://xn--wdiseoweb-p6a.com/" />
+    <meta
+      name="twitter:title"
+      content="Diseño Web Profesional y Personalizado | W Diseño Web"
+    />
+    <meta
+      name="twitter:description"
+      content="Desarrollamos sitios web atractivos y funcionales, adaptados a tus necesidades. ¡Haz que tu presencia online destaque!"
+    />
+    <meta
+      name="twitter:image"
+      content="https://xn--wdiseoweb-p6a.com/img/W Diseño Web.webp"
+    />
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -53,7 +80,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
     </script>
   </head>
   <body>
-    <nav class="navBar">
+    <header class="navBar">
       <div class="logoContainer">
         <svg
           class="logo"
@@ -73,102 +100,103 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
           />
         </svg>
       </div>
-      <div class="nav">
+      <nav class="nav">
         <a href="/" class="anchorItem">Inicio</a>
         <a href="/#services" class="anchorItem">Servicios</a>
         <a href="/#prices" class="anchorItem">Precios</a>
-        <a href="./contact.html" class="anchorItem">Contacto</a>
-      </div>
-      <div class="navMobile">
-        <input type="checkbox" id="menu" />
+        <a href="./contact.html" class="button">Contactar</a>
+      </nav>
+      <nav class="navMobile">
+        <input type="checkbox" id="navButton" />
         <ul class="menu">
           <li>
             <a href="/">
-              <img
-                src="./img/home icon.svg"
-                alt="home icon"
-                title="Inicio"
-                height="auto"
-                width="auto"
-                loading="eager"
-              />
+              <svg
+                width="30px"
+                height="30px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="iconFill"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M11.3103 1.77586C11.6966 1.40805 12.3034 1.40805 12.6897 1.77586L20.6897 9.39491L23.1897 11.7759C23.5896 12.1567 23.605 12.7897 23.2241 13.1897C22.8433 13.5896 22.2103 13.605 21.8103 13.2241L21 12.4524V20C21 21.1046 20.1046 22 19 22H14H10H5C3.89543 22 3 21.1046 3 20V12.4524L2.18966 13.2241C1.78972 13.605 1.15675 13.5896 0.775862 13.1897C0.394976 12.7897 0.410414 12.1567 0.810345 11.7759L3.31034 9.39491L11.3103 1.77586ZM5 10.5476V20H9V15C9 13.3431 10.3431 12 12 12C13.6569 12 15 13.3431 15 15V20H19V10.5476L12 3.88095L5 10.5476ZM13 20V15C13 14.4477 12.5523 14 12 14C11.4477 14 11 14.4477 11 15V20H13Z"
+                  fill="#black"
+                />
+              </svg>
               Inicio
             </a>
           </li>
           <li>
             <a href="/#services">
-              <img
-                src="./img/clipboard.svg"
-                alt="services icon"
-                title="Servicios"
-                height="auto"
-                width="auto"
-                loading="eager"
-              />
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="iconStroke"
+                  d="M8 5.00005C7.01165 5.00082 6.49359 5.01338 6.09202 5.21799C5.71569 5.40973 5.40973 5.71569 5.21799 6.09202C5 6.51984 5 7.07989 5 8.2V17.8C5 18.9201 5 19.4802 5.21799 19.908C5.40973 20.2843 5.71569 20.5903 6.09202 20.782C6.51984 21 7.07989 21 8.2 21H15.8C16.9201 21 17.4802 21 17.908 20.782C18.2843 20.5903 18.5903 20.2843 18.782 19.908C19 19.4802 19 18.9201 19 17.8V8.2C19 7.07989 19 6.51984 18.782 6.09202C18.5903 5.71569 18.2843 5.40973 17.908 5.21799C17.5064 5.01338 16.9884 5.00082 16 5.00005M8 5.00005V7H16V5.00005M8 5.00005V4.70711C8 4.25435 8.17986 3.82014 8.5 3.5C8.82014 3.17986 9.25435 3 9.70711 3H14.2929C14.7456 3 15.1799 3.17986 15.5 3.5C15.8201 3.82014 16 4.25435 16 4.70711V5.00005M12 15H9M15 11H9"
+                  stroke="#000000"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
               Servicios
             </a>
           </li>
           <li>
             <a href="/#prices">
-              <img
-                src="./img/pricing icon.svg"
-                alt="pricing icon"
-                title="Precios"
-                height="auto"
-                width="auto"
-                loading="eager"
-              />
+              <svg
+                fill="#000000"
+                width="30px"
+                height="30px"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                class="iconFill"
+              >
+                <path
+                  d="M2,11.308a1,1,0,0,0,.293.707l9.692,9.692a1,1,0,0,0,1.414,0L21.707,13.4a1,1,0,0,0,0-1.414L12.015,2.293A1,1,0,0,0,11.308,2H3A1,1,0,0,0,2,3ZM4,4h6.894l8.692,8.692-6.894,6.894L4,10.894ZM9.923,7.154a1.958,1.958,0,1,1-2.769,0A1.957,1.957,0,0,1,9.923,7.154Z"
+                />
+              </svg>
               Precios
             </a>
           </li>
           <li>
             <a href="./contact.html">
-              <img
-                src="./img/contact icon.svg"
-                alt="pricing icon"
-                title="Precios"
-                height="auto"
-                width="auto"
-                loading="eager"
-              />
+              <svg
+                width="800px"
+                height="800px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="iconStroke"
+                  d="M3 5.5C3 14.0604 9.93959 21 18.5 21C18.8862 21 19.2691 20.9859 19.6483 20.9581C20.0834 20.9262 20.3009 20.9103 20.499 20.7963C20.663 20.7019 20.8185 20.5345 20.9007 20.364C21 20.1582 21 19.9181 21 19.438V16.6207C21 16.2169 21 16.015 20.9335 15.842C20.8749 15.6891 20.7795 15.553 20.6559 15.4456C20.516 15.324 20.3262 15.255 19.9468 15.117L16.74 13.9509C16.2985 13.7904 16.0777 13.7101 15.8683 13.7237C15.6836 13.7357 15.5059 13.7988 15.3549 13.9058C15.1837 14.0271 15.0629 14.2285 14.8212 14.6314L14 16C11.3501 14.7999 9.2019 12.6489 8 10L9.36863 9.17882C9.77145 8.93713 9.97286 8.81628 10.0942 8.64506C10.2012 8.49408 10.2643 8.31637 10.2763 8.1317C10.2899 7.92227 10.2096 7.70153 10.0491 7.26005L8.88299 4.05321C8.745 3.67376 8.67601 3.48403 8.55442 3.3441C8.44701 3.22049 8.31089 3.12515 8.15802 3.06645C7.98496 3 7.78308 3 7.37932 3H4.56201C4.08188 3 3.84181 3 3.63598 3.09925C3.4655 3.18146 3.29814 3.33701 3.2037 3.50103C3.08968 3.69907 3.07375 3.91662 3.04189 4.35173C3.01413 4.73086 3 5.11378 3 5.5Z"
+                  stroke="#000000"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
               Contacto
             </a>
           </li>
         </ul>
-        <label for="menu" class="hamburger">
+        <label for="navButton" class="hamburger">
           <span></span>
           <span></span>
           <span></span>
         </label>
-      </div>
-    </nav>
+      </nav>
+    </header>
     <main id="swup">
       <div class="privacyPolicies">
-        <div class="intersection2">
-          <svg width="3840" height="255" viewBox="0 0 3840 255" class="waves2">
-            <path
-              class="wave1"
-              d="M0 24.4621C0 24.4621 181.985 34.7396 314.785 30.9299C447.585 27.1202 524.56 36.9376 786.963 30.9299C1049.37 24.8268 1311.52 3.27517 1573.93 0.509702C1836.33 -2.16041 1895.25 5.94528 2157.65 18.1515C2420.06 30.4531 2615.68 39.0356 2878.08 30.9299C3140.49 22.8242 3672.41 6.13601 3934.81 1.17724C4197.22 -3.78153 4459.37 10.904 4590.7 18.1515L4721.78 25.4943V344H4590.7C4459.37 344 4197.22 344 3934.81 344C3672.41 344 3410.25 344 3147.85 344C2885.45 344 2623.29 344 2360.89 344C2098.49 344 1836.33 344 1573.93 344C1311.52 344 1049.37 344 786.963 344C524.56 344 262.403 344 131.079 344H0V24.4621Z"
-              fill="none"
-            />
-            <path
-              class="wave2"
-              d="M1.27125e-08 80.9238C1.27125e-08 80.9238 68 80.9238 184 88.0516C300 95.1794 426.6 86.1508 640 87.1012C853.4 88.0516 1066.6 68.0937 1280 56.4041C1493.4 44.6195 1706.6 41.1981 1920 41.008C2133.4 40.818 2346.6 44.0492 2560 45.2847C2773.4 46.5202 2986.6 45.95 3200 51.7473C3413.4 57.6396 3626.6 69.9945 3733.4 76.1719L3840 82.3493V338H3733.4C3626.6 338 3413.4 338 3200 338C2986.6 338 2773.4 338 2560 338C2346.6 338 2133.4 338 1920 338C1706.6 338 1493.4 338 1280 338C1066.6 338 853.4 338 640 338C426.6 338 213.4 338 106.6 338H1.27125e-08V80.9238Z"
-              fill="#8684F0"
-            />
-            <path
-              class="wave1"
-              d="M0 92.5244C0 92.5244 76 93.4743 136 97.2738C196 101.073 426.6 113.707 640 124.535C853.4 135.269 1066.6 139.069 1280 136.694C1493.4 134.319 1706.6 125.77 1920 122.161C2133.4 118.456 2346.6 119.786 2560 113.707C2773.4 107.723 2986.6 94.4241 3200 89.4847C3413.4 84.6403 3626.6 88.0599 3733.4 89.8647L3840 91.5745V292H3733.4C3626.6 292 3413.4 292 3200 292C2986.6 292 2773.4 292 2560 292C2346.6 292 2133.4 292 1920 292C1706.6 292 1493.4 292 1280 292C1066.6 292 853.4 292 640 292C426.6 292 213.4 292 106.6 292H0V92.5244Z"
-              fill="#C7BFF9"
-            />
-            <path
-              class="wave2"
-              d="M0 166.815C0 166.815 238.4 173.954 316 173.03C393.6 172.105 475.573 158.784 688.973 160.122C902.373 161.365 1066.6 171.818 1280 175.165C1493.4 178.511 1706.6 178.511 1920 177.364C2133.4 176.312 2346.6 174.017 2560 165.412C2773.4 156.807 2986.6 141.892 3200 141.031C3413.4 140.267 3626.6 153.652 3733.4 160.345L3840 167.038V255H3733.4C3626.6 255 3413.4 255 3200 255C2986.6 255 2773.4 255 2560 255C2346.6 255 2133.4 255 1920 255C1706.6 255 1493.4 255 1280 255C1066.6 255 853.4 255 640 255C426.6 255 213.4 255 106.6 255H0V166.815Z"
-              fill="#024de6"
-            />
-          </svg>
-        </div>
-        <h5 class="mainTitle">Aviso de privacidad integral</h5>
+        <h5 class="title">Aviso de privacidad integral</h5>
         <div class="content">
           <section class="section">
             <p class="sectionText">
@@ -312,7 +340,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
           </section>
         </div>
       </div>
-      <div class="intersection2">
+      <div class="waves">
         <svg width="3840" height="255" viewBox="0 0 3840 255" class="waves2">
           <path
             class="wave1"
@@ -340,8 +368,8 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         <img
           src="./img/W Diseño Web.webp"
           alt="W Diseño Web"
-          width="auto"
-          height="auto"
+          width="100px"
+          height="50px"
           class="logo"
         />
         <div class="linkContainer">
@@ -380,5 +408,14 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
       })();
     </script>
     <!--End of Tawk.to Script-->
+    <!-- Swup -->
+    <script src="https://unpkg.com/swup@4"></script>
+    <script>
+      const swup = new Swup();
+      //swup hooks
+      swup.hooks.on("page:view", (visit) => {
+        document.getElementById("navButton").checked = false;
+      });
+    </script>
   </body>
 </html>

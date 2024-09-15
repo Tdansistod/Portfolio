@@ -7,18 +7,45 @@
     <meta name="theme-color" content="#000000" />
     <meta name="author" content="Lautaro Waltersdorf" />
     <link rel="manifest" href="./manifest.json" />
-    <link rel="apple-touch-icon" href="./logo.svg" />
+    <link rel="apple-touch-icon" href="./img/logo.svg" />
+    <link rel="icon" type="image/x-icon" href="./img/logo.svg" />
     <link rel="stylesheet" href="./index.css" />
-    <title>Términos y Condiciones | W Diseño Web</title>
+    <title>Términos y Condiciones</title>
     <meta
       name="description"
       content="Desarrollamos sitios web atractivos y funcionales, adaptados a tus necesidades. ¡Haz que tu presencia online destaque!"
     />
     <link rel="canonical" href="/termsAndConditions" />
-    <script src="https://unpkg.com/swup@4"></script>
-    <script type="text/javascript">
-      const swup = new Swup();
-    </script>
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://xn--wdiseoweb-p6a.com/" />
+    <meta
+      property="og:title"
+      content="Diseño Web Profesional y Personalizado | W Diseño Web"
+    />
+    <meta
+      property="og:description"
+      content="Desarrollamos sitios web atractivos y funcionales, adaptados a tus necesidades. ¡Haz que tu presencia online destaque!"
+    />
+    <meta
+      property="og:image"
+      content="https://xn--wdiseoweb-p6a.com/img/W Diseño Web.webp"
+    />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://xn--wdiseoweb-p6a.com/" />
+    <meta
+      name="twitter:title"
+      content="Diseño Web Profesional y Personalizado | W Diseño Web"
+    />
+    <meta
+      name="twitter:description"
+      content="Desarrollamos sitios web atractivos y funcionales, adaptados a tus necesidades. ¡Haz que tu presencia online destaque!"
+    />
+    <meta
+      name="twitter:image"
+      content="https://xn--wdiseoweb-p6a.com/img/W Diseño Web.webp"
+    />
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -80,7 +107,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         <a href="./contact.html" class="button">Contactar</a>
       </nav>
       <nav class="navMobile">
-        <input type="checkbox" id="menu" />
+        <input type="checkbox" id="navButton" />
         <ul class="menu">
           <li>
             <a href="/">
@@ -160,7 +187,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
             </a>
           </li>
         </ul>
-        <label for="menu" class="hamburger">
+        <label for="navButton" class="hamburger">
           <span></span>
           <span></span>
           <span></span>
@@ -796,5 +823,14 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
       })();
     </script>
     <!--End of Tawk.to Script-->
+    <!-- Swup -->
+    <script src="https://unpkg.com/swup@4"></script>
+    <script>
+      const swup = new Swup();
+      //swup hooks
+      swup.hooks.on("page:view", (visit) => {
+        document.getElementById("navButton").checked = false;
+      });
+    </script>
   </body>
 </html>
