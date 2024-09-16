@@ -417,6 +417,7 @@ html.is-rendering .transition-slideIn {
   width: 4rem;
 }
 .designImg {
+  height: auto;
   width: 100%;
   max-width: 70rem;
 }
