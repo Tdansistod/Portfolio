@@ -456,6 +456,9 @@ html.is-rendering .transition-slideIn {
   .designs .cards {
     gap: 2rem;
   }
+  .designs .card {
+    width: 90%;
+  }
 }
 /* services */
 .services {
