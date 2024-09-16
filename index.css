@@ -338,6 +338,8 @@ html.is-rendering .transition-slideIn {
   max-height: 40%;
 }
 .heroImg {
+  height: 100%;
+  width: auto;
   animation: imgSlide 60s infinite linear;
 }
 @-webkit-keyframes imgSlide {
@@ -425,6 +427,7 @@ html.is-rendering .transition-slideIn {
 }
 .titleRow {
   display: flex;
+  align-items: center;
   gap: 1rem;
 }
 .designOverlay {
@@ -532,6 +535,7 @@ details {
   }
   .services .card img {
     max-height: 3rem;
+    width: auto;
     margin: 0;
   }
   details {
@@ -566,6 +570,7 @@ details {
   }
   .services .card img {
     max-height: 6rem;
+    width: auto;
   }
   .serviceTitle {
     width: fit-content;
