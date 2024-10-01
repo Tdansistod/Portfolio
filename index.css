@@ -116,6 +116,43 @@ html.is-rendering .transition-slideIn {
     transition: transform 0.3s ease-in-out;
   }
 }
+.whatsappFloat {
+  position: fixed;
+  z-index: 10;
+  bottom: 0px;
+  right: 0px;
+  margin: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #00e676;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  animation: pulse 2s infinite ease-out;
+}
+.whatsappFloat .icon {
+  width: 4rem;
+}
+@media only screen and (max-width: 750px) {
+  .whatsappFloat {
+    left: 0;
+    margin: 2rem;
+    padding: 15px;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .whatsappFloat {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+  }
+}
 .button {
   background-color: var(--color-highlight);
   border-radius: 3rem;
