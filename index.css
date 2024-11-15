@@ -357,10 +357,10 @@ html.is-rendering .transition-slideIn {
   margin: 0;
   text-shadow: var(--shadow);
   font-weight: 600;
-  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-size: clamp(2.5rem, 5vw, 5rem);
 }
 .heroSubtitle {
-  font-size: clamp(1.2rem, 3vw, 2rem);
+  font-size: clamp(1.2rem, 2vw, 2rem);
   max-width: 40rem;
   text-align: center;
   font-weight: 600;
@@ -426,7 +426,7 @@ html.is-rendering .transition-slideIn {
   gap: 8rem;
 }
 .designs .card {
-  border-radius: 1rem;
+  border-radius: calc(0.8rem + 0.5rem);
   padding: 0.5rem;
   background-color: rgba(255, 255, 255, 0.3);
 }
@@ -457,7 +457,7 @@ html.is-rendering .transition-slideIn {
 .designImg {
   height: auto;
   width: 100%;
-  max-width: 70rem;
+  max-width: 50rem;
 }
 .text {
   display: flex;
@@ -647,7 +647,7 @@ details {
   animation: slide 20s linear alternate infinite;
 }
 .word:after {
-  content: "Waltersdorf • Waltersdorf • Waltersdorf • Waltersdorf • Waltersdorf • Waltersdorf • Waltersdorf • Waltersdorf • Waltersdorf • Waltersdorf • Waltersdorf • ";
+  content: "W Diseño Web • W Diseño Web • W Diseño Web • W Diseño Web • W Diseño Web • W Diseño Web • W Diseño Web • W Diseño Web • W Diseño Web • W Diseño Web • W Diseño Web • ";
 }
 .textRow2 {
   -webkit-animation: slide2 20s linear alternate infinite;
