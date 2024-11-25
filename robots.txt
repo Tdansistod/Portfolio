@@ -1,6 +1,0 @@
-# https://www.robotstxt.org/robotstxt.html
-User-agent: *
-Disallow: /privacyPolicies.html
-Disallow: /termsAndConditions.html
-
-Sitemap: https://www.wdisenoweb.com/sitemap.xml

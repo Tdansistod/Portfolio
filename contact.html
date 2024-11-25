@@ -2,7 +2,6 @@
 <html lang="es">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="./logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta name="author" content="Lautaro Waltersdorf" />
@@ -18,7 +17,7 @@
     <link rel="canonical" href="/contacto" />
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://wdiseñoweb.com/" />
+    <meta property="og:url" content="https://tdansistod.github.io/Portfolio/" />
     <meta
       property="og:title"
       content="Diseño Web Profesional y Personalizado | W Diseño Web"
@@ -33,7 +32,10 @@
     />
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://wdiseñoweb.com/" />
+    <meta
+      name="twitter:url"
+      content="https://tdansistod.github.io/Portfolio/"
+    />
     <meta
       name="twitter:title"
       content="Diseño Web Profesional y Personalizado | W Diseño Web"
@@ -46,38 +48,6 @@
       name="twitter:image"
       content="https://xn--wdiseoweb-p6a.com/img/W Diseño Web.png"
     />
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=AW-16665838871"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "AW-16665838871");
-    </script>
-    <!-- Event snippet for Contacto (1) conversion page
-In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-    <script>
-      function gtag_report_conversion(url) {
-        var callback = function () {
-          if (typeof url != "undefined") {
-            window.location = url;
-          }
-        };
-        gtag("event", "conversion", {
-          send_to: "AW-16665838871/Js7RCO22xswZEJeK8oo-",
-          value: 1000.0,
-          currency: "ARS",
-          event_callback: callback,
-        });
-        return false;
-      }
-    </script>
   </head>
   <body>
     <header class="navBar">
@@ -204,7 +174,6 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
             rel="noopener noreferrer"
             href="https://wa.me/+541144400101"
             class="card"
-            onclick="gtag_report_conversion()"
           >
             <div class="whatsapp">
               <svg
@@ -225,11 +194,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
             </div>
             <p>+54 11 4440-0101</p>
           </a>
-          <a
-            class="card"
-            href="mailto:presupuesto@wdiseñoweb.com?Subject=Solicito%20un%20presupuesto"
-            onclick="gtag_report_conversion()"
-          >
+          <a class="card" href="mailto:lautaronuriel@gmail.com">
             <div class="letter-image">
               <div class="animated-mail">
                 <div class="back-fold"></div>
@@ -246,7 +211,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                 <div class="left-fold"></div>
               </div>
             </div>
-            <p>presupuesto@wdiseñoweb.com</p>
+            <p>lautaronuriel@gmail.com</p>
           </a>
         </div>
       </div>
@@ -275,31 +240,31 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         </svg>
       </div>
       <footer class="footer">
-        <img
-          src="./img/W Diseño Web.webp"
-          alt="W Diseño Web"
-          width="100px"
-          height="50px"
-          class="logo"
-        />
-        <div class="linkContainer">
-          <a
-            href="./termsAndConditions.html"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="link"
+        <div class="logoContainer">
+          <svg
+            class="logo"
+            width="50"
+            height="54"
+            viewBox="0 0 50 54"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            Términos y Condiciones
-          </a>
-          <a
-            href="./privacyPolicies.html"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="link"
-          >
-            Políticas de Privacidad
-          </a>
+            <path
+              d="M3.93272 47.5899C-2.65265 33.1997 0.883942 2.46798 1.4937 1.55335C2.10345 0.638713 7.89614 1.85823 7.89614 3.07774C7.89614 4.29725 5.76199 40.2729 8.50589 40.2729C10.64 40.2729 15.823 16.1875 20.701 6.73627C22.2254 5.82164 27.4083 6.73627 27.4083 8.56554C26.4937 16.1875 26.1888 40.2729 28.6278 41.1875C30.4571 41.8735 38.0791 5.82164 42.3474 1.55335C43.5669 0.943592 47.8352 1.55335 47.8352 3.38262C43.5669 13.4436 35.64 36.9192 32.2864 52.468C31.9604 53.9794 27.2254 53.1997 25.2742 51.2485C22.8352 48.8094 21.3108 22.5899 21.3108 21.3704C21.3108 21.3704 20.2742 20.7607 19.7864 21.9802C19.1766 23.5046 11.5547 49.7241 10.64 50.6387C9.72541 51.5533 4.44085 48.7078 3.93272 47.5899Z"
+              fill="black"
+            />
+            <path
+              d="M6.09758 46.3559C-0.48779 31.9657 3.0488 1.23397 3.65855 0.319339C4.26831 -0.595295 10.061 0.624218 10.061 1.84373C10.061 3.06324 7.92685 39.0388 10.6708 39.0388C12.8049 39.0388 17.9878 14.9535 22.8659 5.50226C24.3903 4.58763 29.5732 5.50226 29.5732 7.33153C28.6586 14.9535 28.3537 39.0388 30.7927 39.9535C32.622 40.6395 40.2439 4.58763 44.5122 0.319339C45.7317 -0.290417 50 0.319339 50 2.14861C45.7317 12.2096 37.8049 35.6852 34.4512 51.234C34.1252 52.7454 29.3903 51.9657 27.439 50.0145C25 47.5754 23.4756 21.3559 23.4756 20.1364C23.4756 20.1364 22.439 19.5267 21.9512 20.7462C21.3415 22.2706 13.7195 48.4901 12.8049 49.4047C11.8903 50.3193 6.60571 47.4738 6.09758 46.3559Z"
+              fill="#024DE6"
+            />
+          </svg>
         </div>
+        <p>
+          <i
+            >Waltersdorf Lautaro<br />
+            Desarrollador Full Stack</i
+          >
+        </p>
       </footer>
     </main>
     <!-- Swup -->

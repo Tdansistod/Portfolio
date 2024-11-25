@@ -1,19 +1,19 @@
 {
-  "short_name": "W Diseño Web",
-  "name": "W Diseño Web",
+  "short_name": "Waltersdorf Portfolio",
+  "name": "Waltersdorf Portfolio",
   "icons": [
     {
-      "src": "logo.svg",
+      "src": "./img/logo.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo.svg",
+      "src": "./img/logo.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo.svg",
+      "src": "./img/logo.png",
       "type": "image/png",
       "sizes": "512x512"
     }
