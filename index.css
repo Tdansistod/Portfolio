@@ -251,164 +251,107 @@ html.is-rendering .transition-slideIn {
     transform: translateX(-100%);
   }
 }
-/* Designs */
-.designsBackground {
-  max-width: 1920px;
-  background: linear-gradient(
-    45deg,
-    var(--color-main) 50%,
-    var(--color-background) 100%
-  );
-  color: var(--color-background);
-  margin-inline: auto;
-}
-.designs {
-  background: url("./img/design\ background.webp");
-  background-repeat: no-repeat;
-  max-width: 1920px;
-  margin-inline: auto;
-  color: var(--color-background);
-  padding: 10rem 1rem;
-}
+/* general */
 .title {
-  margin-top: 0;
-  margin-bottom: 8rem;
+  margin: 3rem 0;
   font-size: var(--font-xlarge);
   font-weight: 600;
 }
-.designs .cards {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8rem;
-}
-.designs .card {
-  border-radius: calc(0.8rem + 0.5rem);
-  padding: 0.5rem;
-  background-color: rgba(255, 255, 255, 0.3);
-}
-.designContent {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  border-radius: 0.8rem;
-  background-color: rgba(0, 0, 0, 0.4);
-  overflow: clip;
-}
-.description {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 1rem;
-}
-.description .row {
-  display: flex;
-}
-.designTitle {
-  font-size: var(--font-small);
-  margin: 0;
-}
-.line {
-  width: 4rem;
-}
-.designImg {
-  height: auto;
-  width: 100%;
-  max-width: 40rem;
-}
-.text {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.titleRow {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-.designOverlay {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  position: absolute;
-  background-color: rgba(1, 1, 1, 0.5);
-  height: 100%;
-  width: 100%;
-  transition: opacity 0.3s ease;
-}
-.designs .card:hover .designOverlay {
-  opacity: 1;
-}
-
-/* services */
-.services {
-  max-width: 1920px;
-  margin-top: 5rem;
-  padding: 5rem 1rem 10rem 1rem;
+/* abilities */
+.experience,
+.aboutMe {
+  max-width: 30rem;
+  padding: 5rem 1rem 0 1rem;
+  margin-inline: auto;
   color: var(--color-font);
-  margin-inline: auto;
+  font-size: var(--font-small);
 }
-.grid {
-  display: grid;
-  place-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  gap: 8rem;
-  max-width: 80rem;
-  margin-inline: auto;
+.experience p,
+.aboutMe p {
+  font-size: var(--font-medium);
 }
-.services .grid {
-  max-width: 100rem;
-  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
-  gap: 2rem;
-  list-style: none;
-  margin-inline: auto;
+.aboutMe a {
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+  color: var(--color-highlight);
+  font-size: var(--font-medium);
+  margin: 2rem 0;
 }
-.services .card {
+.experience ul {
+  text-align: left;
+  list-style-position: inside;
+}
+.abilities {
+  padding: 5rem 1rem 0 1rem;
+  max-width: 50rem;
+  margin-inline: auto;
+  margin-bottom: 10rem;
+}
+.abilities .title {
+  color: var(--color-font);
+}
+.catergoryImg {
+  display: none;
+}
+.abilities .card {
   display: flex;
   align-items: flex-start;
+  justify-content: center;
   gap: 2rem;
   min-height: 15rem;
+  margin-top: 2rem;
   padding: 1rem 2rem;
   text-align: left;
   background-color: white;
   border-radius: 3rem;
   box-shadow: var(--shadow);
 }
-.services .card img {
-  max-width: 10rem;
-  margin: auto;
-  opacity: 0.8;
-}
+
 details {
   pointer-events: all;
 }
 summary {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 0;
 }
 details[open] summary {
   margin-bottom: 1rem;
 }
-.serviceTitle {
-  font-size: var(--font-medium);
+.cardTitle {
+  font-size: var(--font-large);
   font-weight: 600;
   margin: 0;
 }
 summary::-webkit-details-marker {
   display: none;
 }
-.serviceDescription {
-  font-size: var(--font-small);
-  font-weight: 600;
-  margin: 0;
+.iconsList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 1rem;
+  gap: 1rem;
+  list-style: none;
+}
+.abilities .icon,
+.abilities .iconHorizontal {
+  height: 5rem;
+  width: auto;
+  max-width: 5rem;
+  padding: 0.3rem;
+  border-radius: 1rem;
+}
+.abilities .iconHorizontal {
+  width: 10rem;
+  max-width: 10rem;
+  height: auto;
 }
 details {
   pointer-events: none;
 }
-
 /* text slide */
 .textSlide {
   display: flex;
@@ -485,6 +428,81 @@ details {
     transform: translateX(100%);
   }
 }
+/* Designs */
+.designs {
+  background: url("./img/design\ background.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 1920px;
+  margin-inline: auto;
+  color: var(--color-background);
+  padding: 10rem 1rem;
+}
+.designs .cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8rem;
+}
+.designs .card {
+  border-radius: calc(0.8rem + 0.5rem);
+  padding: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.designContent {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 0.8rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  overflow: clip;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.description .row {
+  display: flex;
+}
+.designTitle {
+  font-size: var(--font-small);
+  margin: 0;
+}
+.line {
+  width: 4rem;
+}
+.designImg {
+  height: auto;
+  width: 100%;
+  max-width: 40rem;
+}
+.text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.titleRow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.designOverlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  position: absolute;
+  background-color: rgba(1, 1, 1, 0.5);
+  height: 100%;
+  width: 100%;
+  transition: opacity 0.3s ease;
+}
+.designs .card:hover .designOverlay {
+  opacity: 1;
+}
+
 /* Waves */
 .waves {
   max-width: 1920px;
@@ -556,8 +574,8 @@ details {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 10rem 1rem 0 1rem;
-  text-align: left;
+  gap: 2rem;
+  padding: 10rem 1rem;
   max-width: 1920px;
   min-height: 100svh;
   color: var(--color-background);
@@ -573,8 +591,9 @@ details {
   justify-content: flex-end;
   flex-direction: column;
   gap: 1.5rem;
-  padding: 1rem 1.5rem;
-  min-width: 20rem;
+  width: 100%;
+  max-width: 20rem;
+  padding: 1rem 0rem;
   border-radius: 2rem;
   color: white;
   background-color: rgba(255, 255, 255, 0.3);
@@ -746,39 +765,6 @@ details {
 .quote {
   text-align: center;
 }
-/* privacy policies and terms and conditions */
-.privacyPolicies,
-.termsConditions {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: var(--color-main);
-  color: var(--color-background);
-  padding: 10rem 1rem;
-}
-.content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 3rem;
-}
-.section {
-  width: 80%;
-  padding: 2rem;
-  border-radius: 2rem;
-  max-width: 60rem;
-  text-align: left;
-  color: var(--color-font);
-  background-color: var(--color-background);
-}
-.sectionTitle {
-  font-size: var(--font-medium);
-  margin: 1rem 0 2rem 0;
-}
-.sectionText {
-  font-size: var(--font-small);
-}
 /* fonts */
 @media only screen and (min-width: 700px) {
   :root {
@@ -948,44 +934,27 @@ details {
     min-width: auto;
     width: 100%;
   }
-  .services {
-    margin-top: 0;
-  }
-  .services .title {
-    margin-bottom: 3rem;
-  }
-  .services .card {
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-    border-radius: 2rem;
-  }
-  .services .card img {
-    max-height: 6rem;
-    width: auto;
-  }
-  .serviceTitle {
-    width: fit-content;
-  }
-
-  .designsBackground .title {
-    margin-bottom: 3rem;
-  }
 }
 @media only screen and (max-width: 1000px) {
-  .designs .grid,
-  .services .grid {
+  .designs .grid {
     place-items: unset;
     grid-template-columns: 1fr;
     gap: 3rem;
   }
-  .services .card {
+  .abilities .card {
+    gap: 1rem;
     min-height: auto;
+    justify-content: flex-start;
   }
-  .services .card img {
+  .catergoryImg {
+    display: block;
     max-height: 3rem;
+    opacity: 0.8;
     width: auto;
     margin: 0;
+  }
+  summary {
+    justify-content: space-between;
   }
   details {
     position: relative;
