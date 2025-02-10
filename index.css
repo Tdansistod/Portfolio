@@ -56,11 +56,11 @@ input:-webkit-autofill:active {
 }
 @media only screen and (min-width: 700px) {
   :root {
-    --font-smaller: 1.3rem;
-    --font-small: 1.5rem;
-    --font-medium: 1.8rem;
-    --font-large: 3rem;
-    --font-xlarge: 4rem;
+    --font-smaller: 1.1rem;
+    --font-small: 1.3rem;
+    --font-medium: 1.4rem;
+    --font-large: 2.4rem;
+    --font-xlarge: 3rem;
   }
 }
 body::-webkit-scrollbar {
@@ -159,6 +159,7 @@ html.is-rendering .transition-slideIn {
   color: var(--color-background);
   box-sizing: border-box;
   cursor: pointer;
+  font-weight: 600;
   font-size: var(--font-smaller);
   padding: 0.6rem 1.5rem;
   user-select: none;
@@ -421,9 +422,9 @@ html.is-rendering .transition-slideIn {
 }
 .designs .cards {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 8rem;
+  gap: 4rem;
 }
 .designs .card {
   border-radius: calc(0.8rem + 0.5rem);
@@ -448,7 +449,7 @@ html.is-rendering .transition-slideIn {
   display: flex;
 }
 .designTitle {
-  font-size: var(--font-small);
+  font-size: var(--font-smaller);
   margin: 0;
 }
 .line {
@@ -457,7 +458,7 @@ html.is-rendering .transition-slideIn {
 .designImg {
   height: auto;
   width: 100%;
-  max-width: 50rem;
+  max-width: 20rem;
 }
 .text {
   display: flex;
@@ -709,7 +710,7 @@ details {
 .cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   max-width: 100rem;
   margin-inline: auto;
   gap: 2rem;
@@ -818,7 +819,7 @@ details {
   z-index: 1;
 }
 .footer .logo {
-  width: 50%;
+  width: 15%;
   max-width: 15rem;
   height: auto;
   border-radius: 1rem;
