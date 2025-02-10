@@ -458,7 +458,7 @@ html.is-rendering .transition-slideIn {
 .designImg {
   height: auto;
   width: 100%;
-  max-width: 20rem;
+  max-width: 30rem;
 }
 .text {
   display: flex;
