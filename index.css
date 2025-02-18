@@ -416,7 +416,7 @@ html.is-rendering .transition-slideIn {
 }
 .title {
   margin-top: 0;
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
   font-size: var(--font-xlarge);
   font-weight: 600;
 }
@@ -723,6 +723,10 @@ details {
   background-color: rgba(1, 1, 1, 0.2);
   border: 2px solid transparent;
 }
+.prices .card h3 {
+  font-size: var(--font-large);
+  margin: 1rem 0;
+}
 .prices .card h5 {
   font-size: calc(var(--font-medium) + 0.5rem);
   margin: 1rem 0;
@@ -748,9 +752,32 @@ details {
   font-size: var(--font-small);
   font-weight: 600;
   text-align: left;
+  list-style-type: none;
 }
 .prices ul li {
   margin-bottom: 1rem;
+}
+.prices ul li:before {
+  color: rgb(0, 255, 0);
+  content: "✔";
+  font-size: var(--font-small);
+  margin-right: 0.5rem;
+}
+.prices .card:nth-child(1) ul li:nth-child(5):before {
+  color: red;
+  content: "❌";
+  font-size: var(--font-smaller);
+  margin-right: 0.5rem;
+}
+.prices .card:nth-child(1) ul li:nth-child(6):before {
+  content: "🔧";
+  font-size: var(--font-smaller);
+  margin-right: 0.5rem;
+}
+.prices .card:nth-child(2) ul li:nth-child(6):before {
+  content: "💳";
+  font-size: var(--font-smaller);
+  margin-right: 0.5rem;
 }
 @media only screen and (max-width: 750px) {
   .prices .title {
