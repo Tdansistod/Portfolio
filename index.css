@@ -126,7 +126,7 @@ html.is-rendering .transition-slideIn {
   cursor: pointer;
   font-weight: 600;
   font-size: var(--font-smaller);
-  padding: 0.6rem 1.8rem;
+  padding: 1rem 1.8rem;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
