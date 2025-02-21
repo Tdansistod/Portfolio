@@ -202,6 +202,9 @@ header {
   .navBar {
     display: none;
   }
+  .logoContainer {
+    margin-left: 1rem;
+  }
   .navMobile {
     display: block;
     position: fixed;
@@ -353,16 +356,7 @@ header {
     font-size: 1.2rem;
   }
 }
-@media only screen and (max-width: 850px) {
-  .heroTitle {
-    font-size: var(--font-medium);
-  }
-  .heroSubtitle {
-    font-size: var(--font-smaller);
-  }
-}
-
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 800px) {
   .heroSection {
     flex-direction: column;
     gap: 2rem;
@@ -371,10 +365,18 @@ header {
   }
   .textContainer {
     margin-inline: auto;
-    width: auto;
+    width: 80%;
     padding: 0 1rem;
   }
-
+  .heroSection br {
+    display: none;
+  }
+  .heroTitle {
+    font-size: 2rem;
+  }
+  .heroSubtitle {
+    font-size: 1.6rem;
+  }
   .heroImg {
     display: none;
   }
