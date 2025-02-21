@@ -233,6 +233,20 @@
           height="1881px"
           width="323px"
         />
+        <script>
+          function updateImageSrc() {
+            document.getElementById("hero").src =
+              window.innerWidth > 800
+                ? "./img/hero.webp"
+                : "./img/hero mobile.webp";
+            if (window.innerWidth < 768) {
+              img.src = "mobile.jpg";
+            } else {
+              img.src = "desktop.jpg";
+            }
+          }
+          window.addEventListener("resize", updateImageSrc);
+        </script>
       </div>
       <div class="testimonials">
         <div class="titleContainer">
@@ -651,22 +665,6 @@
         </div>
       </footer>
     </main>
-    <script>
-      function updateImageSrc() {
-        document.getElementById("hero").src =
-          window.innerWidth > 800
-            ? "./img/hero.webp"
-            : "./img/hero mobile.webp";
-        if (window.innerWidth < 768) {
-          img.src = "mobile.jpg";
-        } else {
-          img.src = "desktop.jpg";
-        }
-      }
-
-      window.addEventListener("load", updateImageSrc);
-      window.addEventListener("resize", updateImageSrc);
-    </script>
     <!-- Swup
     <script src="./swup.js"></script>
     <script>
