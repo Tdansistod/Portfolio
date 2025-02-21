@@ -591,13 +591,9 @@ header {
   font-size: var(--font-smaller);
   margin-right: 0.5rem;
 }
-.prices .card:nth-child(1) ul li:nth-child(6):before {
-  content: "🔧";
-  font-size: var(--font-smaller);
-  margin-right: 0.5rem;
-}
+.prices .card:nth-child(1) ul li:nth-child(6):before,
 .prices .card:nth-child(2) ul li:nth-child(6):before {
-  content: "💳";
+  content: "🔧";
   font-size: var(--font-smaller);
   margin-right: 0.5rem;
 }
