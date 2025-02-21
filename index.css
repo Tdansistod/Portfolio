@@ -343,9 +343,6 @@ header {
   height: auto;
   width: 50%;
 }
-.heroImgMobile {
-  display: none;
-}
 @media only screen and (max-width: 1200px) {
   .heroTitle {
     font-size: 2rem;
@@ -381,10 +378,7 @@ header {
     font-size: 1.2rem;
   }
   .heroImg {
-    display: none;
-  }
-  .heroImgMobile {
-    display: block;
+    width: 100%;
   }
 }
 /* Testimonials */

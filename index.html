@@ -226,18 +226,12 @@
         </div>
         <img
           class="heroImg"
-          src="./img/hero.webp"
           alt="W Diseño Web"
           title="W Diseño Web"
+          id="hero"
           loading="eager"
           height="1881px"
           width="323px"
-        />
-        <img
-          class="heroImgMobile"
-          src="./img/hero mobile.webp"
-          alt="W Diseño Web"
-          loading="eager"
         />
       </div>
       <div class="testimonials">
@@ -657,6 +651,22 @@
         </div>
       </footer>
     </main>
+    <script>
+      function updateImageSrc() {
+        document.getElementById("hero").src =
+          window.innerWidth > 800
+            ? "./img/hero.webp"
+            : "./img/hero mobile.webp";
+        if (window.innerWidth < 768) {
+          img.src = "mobile.jpg";
+        } else {
+          img.src = "desktop.jpg";
+        }
+      }
+
+      window.addEventListener("load", updateImageSrc);
+      window.addEventListener("resize", updateImageSrc);
+    </script>
     <!-- Swup
     <script src="./swup.js"></script>
     <script>
