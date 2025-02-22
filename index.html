@@ -242,6 +242,7 @@
             de <span class="highlightText">Diseño Web Profesional</span>
           </p>
           <a
+            id="heroButton"
             target="_blank"
             rel="noopener noreferrer"
             href="https://wa.me/+541144400101"
@@ -273,21 +274,6 @@
           height="1881px"
           width="323px"
         />
-        <script>
-          function updateImageSrc() {
-            document.getElementById("hero").src =
-              window.innerWidth > 800
-                ? "./img/hero.webp"
-                : "./img/hero mobile.webp";
-            if (window.innerWidth < 768) {
-              img.src = "mobile.jpg";
-            } else {
-              img.src = "desktop.jpg";
-            }
-          }
-          window.addEventListener("resize", updateImageSrc);
-          updateImageSrc();
-        </script>
       </div>
       <div class="testimonials">
         <div class="titleContainer">
@@ -702,6 +688,22 @@
         </div>
       </footer>
     </main>
+    <script>
+      const mobileChanges = () => {
+        if (window.innerWidth < 800) {
+          document.getElementById("hero").src = "./img/hero mobile.webp";
+          document.getElementsByClassName(
+            "heroTitle"
+          )[0].innerHTML = `Potencia tu <br><span class="highlightText">negocio en la web</span> `;
+          document.getElementsByClassName(
+            "heroSubtitle"
+          )[0].innerHTML = `¿Querés <span class="highlightText">impulsar tu marca</span>?`;
+          document.getElementById("heroButton").innerHTML = `Contáctanos`;
+        } else document.getElementById("hero").src = "./img/hero.webp";
+      };
+      window.addEventListener("resize", mobileChanges);
+      mobileChanges();
+    </script>
     <!-- Swup
     <script src="./swup.js"></script>
     <script>
