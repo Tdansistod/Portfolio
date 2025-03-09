@@ -8,7 +8,7 @@
     <meta name="author" content="Lautaro Waltersdorf" />
     <link rel="manifest" href="./manifest.json" />
     <link rel="apple-touch-icon" href="./img/logo.svg" />
-    <link rel="stylesheet" href="./index.css" rel="preload" />
+    <link rel="stylesheet" href="./index.css" defer />
     <link rel="icon" type="image/x-icon" href="./img/logo.svg" />
     <title>Diseño Web Profesional y Personalizado</title>
     <meta
@@ -47,7 +47,7 @@
       content="https://xn--wdiseoweb-p6a.com/img/W Diseño Web.png"
     />
     <!-- Google Tag Manager -->
-    <script>
+    <script defer>
       (function (w, d, s, l, i) {
         w[l] = w[l] || [];
         w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
@@ -61,7 +61,7 @@
     </script>
     <!-- End Google Tag Manager -->
     <!-- Hotjar Tracking Code for https://xn--wdiseoweb-p6a.com/ -->
-    <script>
+    <script defer>
       (function (h, o, t, j, a, r) {
         h.hj =
           h.hj ||
@@ -263,6 +263,8 @@
           alt="W Diseño Web"
           title="W Diseño Web"
           id="hero"
+          loading="eager"
+          fetchpriority="high"
         />
         <script>
           const dynamicChanges = () => {
