@@ -8,7 +8,6 @@
     <meta name="author" content="Lautaro Waltersdorf" />
     <link rel="manifest" href="./manifest.json" />
     <link rel="apple-touch-icon" href="./img/logo.svg" />
-    <link rel="stylesheet" href="./index.css" defer />
     <link rel="icon" type="image/x-icon" href="./img/logo.svg" />
     <title>Diseño Web Profesional y Personalizado</title>
     <meta
@@ -76,6 +75,150 @@
         a.appendChild(r);
       })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
     </script>
+    <link rel="stylesheet" href="./global.css" />
+    <style>
+      /* Hero */
+      .heroSection {
+        display: flex;
+        margin-inline: auto;
+        margin-top: 3rem;
+        width: 90%;
+        max-width: 70rem;
+        border-radius: 3rem;
+        border: var(--color-font) 1px solid;
+        overflow: hidden;
+      }
+      .textContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        text-align: left;
+        gap: 2rem;
+        width: 50%;
+        padding: 1rem 2rem;
+      }
+      .heroTitle {
+        margin: 0;
+        font-weight: 600;
+        font-size: var(--font-large);
+      }
+      .heroSubtitle {
+        margin: 0;
+        font-size: var(--font-medium);
+        font-weight: 600;
+      }
+      .highlightText {
+        color: var(--color-main);
+      }
+      .heroImg {
+        aspect-ratio: 500 / 334;
+        width: 50%;
+        height: auto;
+        object-fit: cover;
+      }
+      @media only screen and (max-width: 800px) {
+        .heroSection {
+          max-width: 500px;
+          flex-direction: column;
+          gap: 2rem;
+          padding: 1rem 0 0 0;
+          margin: 1rem auto 0 auto;
+          border-radius: 1rem;
+        }
+        .textContainer {
+          align-items: center;
+          margin-inline: auto;
+          width: 90%;
+          padding: 0;
+        }
+        .heroTitle {
+          text-align: center;
+          font-size: 2.4rem;
+        }
+        .heroSubtitle {
+          text-align: center;
+          font-size: 1.6rem;
+        }
+        #heroButton {
+          font-size: 1.4rem;
+        }
+        .heroImg {
+          width: 100%;
+          aspect-ratio: 300 / 286;
+        }
+      }
+      /* Testimonials */
+      .testimonials {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 70rem;
+        margin-inline: auto;
+        justify-content: center;
+        padding-bottom: 5rem;
+      }
+      .testimonials .card {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        background-color: white;
+        width: 80%;
+        max-width: 30rem;
+        padding: 1rem;
+        border-radius: 2rem;
+        border: var(--color-font) 1px solid;
+        color: black;
+      }
+      .people {
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        gap: 1rem;
+      }
+      .text {
+        font-size: var(--font-smaller);
+      }
+      .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+      }
+      .rating {
+        display: flex;
+        gap: 0.4rem;
+        color: var(--color-font);
+      }
+      .stars {
+        display: flex;
+        align-items: center;
+        gap: 0.2rem;
+      }
+      .rating p {
+        font-size: var(--font-small);
+      }
+      @media only screen and (max-width: 450px) {
+        .testimonials .card {
+          flex-direction: column;
+          padding: 1rem 0.4rem;
+        }
+        .testimonials .row {
+          gap: 1rem;
+          align-items: flex-start;
+          flex-direction: column-reverse;
+        }
+      }
+    </style>
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -719,5 +862,6 @@
         document.getElementById("navButton").checked = false;
       });
     </script> -->
+    <link rel="stylesheet" href="./index.css" />
   </body>
 </html>

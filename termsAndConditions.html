@@ -9,7 +9,6 @@
     <link rel="manifest" href="./manifest.json" />
     <link rel="apple-touch-icon" href="./img/logo.svg" />
     <link rel="icon" type="image/x-icon" href="./img/logo.svg" />
-    <link rel="stylesheet" href="./index.css" />
     <title>Términos y Condiciones</title>
     <meta
       name="description"
@@ -46,6 +45,42 @@
       name="twitter:image"
       content="https://xn--wdiseoweb-p6a.com/img/W Diseño Web.png"
     />
+    <link rel="stylesheet" href="./global.css" />
+    <style>
+      /* privacy policies and terms and conditions */
+      .privacyPolicies,
+      .termsConditions {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: var(--color-main);
+        color: var(--color-background);
+        padding: 4rem 1rem;
+      }
+      .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 3rem;
+      }
+      .section {
+        width: 80%;
+        padding: 2rem;
+        border-radius: 2rem;
+        max-width: 60rem;
+        text-align: left;
+        color: var(--color-font);
+        background-color: var(--color-background);
+      }
+      .sectionTitle {
+        font-size: var(--font-medium);
+        margin: 1rem 0 2rem 0;
+      }
+      .sectionText {
+        font-size: var(--font-small);
+      }
+    </style>
   </head>
   <body style="background-color: var(--color-main)">
     <header>
