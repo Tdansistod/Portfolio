@@ -8,7 +8,7 @@
     <meta name="author" content="Lautaro Waltersdorf" />
     <link rel="manifest" href="./manifest.json" />
     <link rel="apple-touch-icon" href="./img/logo.svg" />
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./index.css" rel="preload" />
     <link rel="icon" type="image/x-icon" href="./img/logo.svg" />
     <title>Diseño Web Profesional y Personalizado</title>
     <meta
@@ -234,7 +234,7 @@
         <div class="textContainer">
           <h1 class="heroTitle">
             Aprovecha el alcance de la <span class="highlightText">web</span>
-            <br />
+
             para hacer <span class="highlightText">crecer tu negocio</span>
           </h1>
           <p class="heroSubtitle">
@@ -271,8 +271,8 @@
           title="W Diseño Web"
           id="hero"
           loading="eager"
-          height="1881px"
-          width="323px"
+          width="500px"
+          height="334px"
         />
       </div>
       <div class="testimonials">
@@ -676,6 +676,8 @@
       const mobileChanges = () => {
         if (window.innerWidth < 800) {
           document.getElementById("hero").src = "./img/hero mobile.webp";
+          document.getElementById("hero").height = 254;
+          document.getElementById("hero").width = 356;
           document.getElementsByClassName(
             "heroTitle"
           )[0].innerHTML = `Potencia tu <br><span class="highlightText">negocio en la web</span>`;
@@ -686,7 +688,7 @@
         } else {
           document.getElementsByClassName(
             "heroTitle"
-          )[0].innerHTML = `Aprovecha el alcance de la <span class="highlightText">web</span><br /> para hacer <span class="highlightText">crecer tu negocio</span>`;
+          )[0].innerHTML = `Aprovecha el alcance de la <span class="highlightText">web</span> para hacer <span class="highlightText">crecer tu negocio</span>`;
           document.getElementsByClassName(
             "heroSubtitle"
           )[0].innerHTML = `Impulsa tu marca con nuestro servicio<br /> de <span class="highlightText">Diseño Web Profesional</span>`;
@@ -709,6 +711,8 @@
             </svg>
             Obtenga un presupuesto`;
           document.getElementById("hero").src = "./img/hero.webp";
+          document.getElementById("hero").height = 334;
+          document.getElementById("hero").width = 500;
         }
       };
       window.addEventListener("resize", mobileChanges);
