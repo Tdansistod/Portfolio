@@ -391,7 +391,23 @@
               document.getElementsByClassName(
                 "heroSubtitle"
               )[0].innerHTML = `¿Querés <span class="highlightText">impulsar tu marca</span>?`;
-              document.getElementById("heroButton").innerHTML = `Contáctanos`;
+              document.getElementById(
+                "heroButton"
+              ).innerHTML = `<?xml version="1.0" encoding="utf-8"?>
+            <svg
+              width="20px"
+              height="20px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M3.50002 12C3.50002 7.30558 7.3056 3.5 12 3.5C16.6944 3.5 20.5 7.30558 20.5 12C20.5 16.6944 16.6944 20.5 12 20.5C10.3278 20.5 8.77127 20.0182 7.45798 19.1861C7.21357 19.0313 6.91408 18.9899 6.63684 19.0726L3.75769 19.9319L4.84173 17.3953C4.96986 17.0955 4.94379 16.7521 4.77187 16.4751C3.9657 15.176 3.50002 13.6439 3.50002 12ZM12 1.5C6.20103 1.5 1.50002 6.20101 1.50002 12C1.50002 13.8381 1.97316 15.5683 2.80465 17.0727L1.08047 21.107C0.928048 21.4637 0.99561 21.8763 1.25382 22.1657C1.51203 22.4552 1.91432 22.5692 2.28599 22.4582L6.78541 21.1155C8.32245 21.9965 10.1037 22.5 12 22.5C17.799 22.5 22.5 17.799 22.5 12C22.5 6.20101 17.799 1.5 12 1.5ZM14.2925 14.1824L12.9783 15.1081C12.3628 14.7575 11.6823 14.2681 10.9997 13.5855C10.2901 12.8759 9.76402 12.1433 9.37612 11.4713L10.2113 10.7624C10.5697 10.4582 10.6678 9.94533 10.447 9.53028L9.38284 7.53028C9.23954 7.26097 8.98116 7.0718 8.68115 7.01654C8.38113 6.96129 8.07231 7.046 7.84247 7.24659L7.52696 7.52195C6.76823 8.18414 6.3195 9.2723 6.69141 10.3741C7.07698 11.5163 7.89983 13.314 9.58552 14.9997C11.3991 16.8133 13.2413 17.5275 14.3186 17.8049C15.1866 18.0283 16.008 17.7288 16.5868 17.2572L17.1783 16.7752C17.4313 16.5691 17.5678 16.2524 17.544 15.9269C17.5201 15.6014 17.3389 15.308 17.0585 15.1409L15.3802 14.1409C15.0412 13.939 14.6152 13.9552 14.2925 14.1824Z"
+                fill="#ffffff"
+              />
+            </svg>Contáctanos`;
             } else {
               document.getElementsByClassName(
                 "heroTitle"
@@ -425,6 +441,69 @@
           window.addEventListener("resize", dynamicChanges);
           dynamicChanges();
         </script>
+      </div>
+
+      <div class="designs" id="designs">
+        <div class="titleContainer">
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M32.7424 20.9132C32.7424 21.8265 31.8833 22.6484 30.9287 22.6484H9.16407C8.20948 22.6484 7.35034 21.8265 7.35034 20.9132V19.1781C7.35034 18.2648 8.20948 17.4429 9.16407 17.4429H31.0242C31.9788 17.4429 32.8379 18.2648 32.8379 19.1781V20.9132H32.7424ZM29.115 31.3242C29.115 32.2374 28.2559 33.0594 27.3013 33.0594H9.16407C8.20948 33.0594 7.35034 32.2374 7.35034 31.3242V29.589C7.35034 28.6758 8.20948 27.8539 9.16407 27.8539H27.3967C28.3513 27.8539 29.2105 28.6758 29.2105 29.589V31.3242H29.115ZM7.35034 8.6758C7.35034 7.76256 8.20948 6.94064 9.16407 6.94064H27.3967C28.3513 6.94064 29.2105 7.76256 29.2105 8.6758V10.411C29.2105 11.3242 28.3513 12.1461 27.3967 12.1461H9.16407C8.20948 12.1461 7.35034 11.3242 7.35034 10.411V8.6758ZM34.5562 0H5.53662C2.48193 0 0 2.37443 0 5.20548V34.7945C0 37.6256 2.48193 40 5.44116 40H34.5562C37.5154 40 39.9973 37.6256 39.9973 34.7945V5.20548C40.0928 2.37443 37.6109 0 34.5562 0Z"
+              fill="#626566"
+            />
+          </svg>
+
+          <h2 class="title">Modelos</h2>
+        </div>
+        <a
+          class="card"
+          href="https://tdansistod.github.io/Walter-Burgers/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div class="designContent">
+            <img
+              class="designImg"
+              alt="Modelo de Diseño Web"
+              title="Modelo de Diseño Web"
+              src="./img/Walter Burgers.webp"
+              loading="lazy"
+              width="356px"
+              height="244px"
+            />
+            <div class="description">
+              <p class="designTitle">Walter Burgers</p>
+              <button class="button">Visitar ➢</button>
+            </div>
+          </div>
+        </a>
+        <a
+          class="card"
+          href="https://tdansistod.github.io/Waltersdorf/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div class="designContent">
+            <img
+              class="designImg"
+              alt="Modelo de Diseño Web"
+              title="Modelo de Diseño Web"
+              src="./img/waltersdorf.webp"
+              loading="lazy"
+              width="356px"
+              height="244px"
+            />
+            <div class="description">
+              <p class="designTitle">Waltersdorf</p>
+              <button class="button">Visitar ➢</button>
+            </div>
+          </div>
+        </a>
       </div>
       <div class="testimonials">
         <div class="titleContainer">
@@ -529,137 +608,56 @@
           </div>
         </div>
       </div>
-      <div class="designs" id="designs">
-        <div class="titleContainer">
-          <svg
-            width="40"
-            height="40"
-            viewBox="0 0 40 40"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M32.7424 20.9132C32.7424 21.8265 31.8833 22.6484 30.9287 22.6484H9.16407C8.20948 22.6484 7.35034 21.8265 7.35034 20.9132V19.1781C7.35034 18.2648 8.20948 17.4429 9.16407 17.4429H31.0242C31.9788 17.4429 32.8379 18.2648 32.8379 19.1781V20.9132H32.7424ZM29.115 31.3242C29.115 32.2374 28.2559 33.0594 27.3013 33.0594H9.16407C8.20948 33.0594 7.35034 32.2374 7.35034 31.3242V29.589C7.35034 28.6758 8.20948 27.8539 9.16407 27.8539H27.3967C28.3513 27.8539 29.2105 28.6758 29.2105 29.589V31.3242H29.115ZM7.35034 8.6758C7.35034 7.76256 8.20948 6.94064 9.16407 6.94064H27.3967C28.3513 6.94064 29.2105 7.76256 29.2105 8.6758V10.411C29.2105 11.3242 28.3513 12.1461 27.3967 12.1461H9.16407C8.20948 12.1461 7.35034 11.3242 7.35034 10.411V8.6758ZM34.5562 0H5.53662C2.48193 0 0 2.37443 0 5.20548V34.7945C0 37.6256 2.48193 40 5.44116 40H34.5562C37.5154 40 39.9973 37.6256 39.9973 34.7945V5.20548C40.0928 2.37443 37.6109 0 34.5562 0Z"
-              fill="#626566"
-            />
-          </svg>
+      <section id="cotizador" class="cotizador">
+        <h2 class="title">Calculá tu presupuesto</h2>
 
-          <h2 class="title">Modelos</h2>
+        <!-- Tipo de sitio -->
+        <label>
+          Tipo de sitio
+          <select id="siteType" data-field="siteType" required>
+            <option value="">Seleccione una opción</option>
+            <option value="100">Landing page (ARS $100.000)</option>
+            <option value="150">
+              Web corporativa 5 páginas (ARS $150.000)
+            </option>
+            <option value="500" data-kind="ecom">
+              Tienda online (ARS $500.000)
+            </option>
+          </select>
+        </label>
+
+        <!-- Diseño -->
+        <label>
+          Diseño
+          <select id="design" data-field="design" required>
+            <option value="">Seleccione una opción</option>
+            <option value="0">
+              Ya cuento con diseño, logo y colores (0 ARS)
+            </option>
+            <option value="50">Diseño a medida (ARS $50.000)</option>
+          </select>
+        </label>
+
+        <!-- Escala del E‑commerce (se oculta hasta que corresponda) -->
+        <label id="scaleWrap" hidden>
+          Escala del E‑commerce
+          <select id="scale" data-field="scale">
+            <!-- NOTA: no lleva required porque solo es necesario si se muestra -->
+            <option value="">Seleccione una opción</option>
+            <option value="0">Pequeño (menos de 100 productos)</option>
+            <option value="100">Mediano (entre 100 y 400 productos)</option>
+            <option value="250">Grande (más de 400 productos)</option>
+          </select>
+        </label>
+
+        <!-- Total -->
+        <div id="totalBox" hidden>
+          <p class="totalTitle">Total estimado</p>
+          <p class="total" id="totalAmount">ARS 0</p>
         </div>
-        <a
-          class="card"
-          href="https://tdansistod.github.io/Walter-Burgers/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div class="designContent">
-            <img
-              class="designImg"
-              alt="Modelo de Diseño Web"
-              title="Modelo de Diseño Web"
-              src="./img/Walter Burgers.webp"
-              loading="lazy"
-              width="356px"
-              height="244px"
-            />
-            <div class="description">
-              <p class="designTitle">Walter Burgers</p>
-              <button class="button">Visitar ➢</button>
-            </div>
-          </div>
-        </a>
-        <a
-          class="card"
-          href="https://tdansistod.github.io/Waltersdorf/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div class="designContent">
-            <img
-              class="designImg"
-              alt="Modelo de Diseño Web"
-              title="Modelo de Diseño Web"
-              src="./img/waltersdorf.webp"
-              loading="lazy"
-              width="356px"
-              height="244px"
-            />
-            <div class="description">
-              <p class="designTitle">Waltersdorf</p>
-              <button class="button">Visitar ➢</button>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div id="prices" class="prices">
-        <div class="titleContainer">
-          <svg
-            width="40"
-            height="40"
-            viewBox="0 0 40 40"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 20.0056V32.0369H30.1562L40 20.0056L30.1562 7.97437H0V20.0056Z"
-              fill="#626566"
-            />
-            <path
-              d="M28.9125 22.1931C30.1206 22.1931 31.1 21.2137 31.1 20.0056C31.1 18.7975 30.1206 17.8181 28.9125 17.8181C27.7044 17.8181 26.725 18.7975 26.725 20.0056C26.725 21.2137 27.7044 22.1931 28.9125 22.1931Z"
-              fill="#E7F3FC"
-            />
-            <path
-              d="M13.1913 27.3194V25.6094C11.9838 25.5556 10.8138 25.2306 10.1288 24.8344L10.67 22.7269C11.4263 23.1406 12.4888 23.5194 13.6613 23.5194C14.6875 23.5194 15.39 23.1231 15.39 22.4031C15.39 21.7181 14.8138 21.2856 13.48 20.8356C11.5525 20.1869 10.2375 19.2869 10.2375 17.5394C10.2375 15.9544 11.355 14.7119 13.2825 14.3331V12.6219H15.0475V14.2069C16.255 14.2606 17.0663 14.5119 17.66 14.8006L17.1375 16.8369C16.67 16.6394 15.8413 16.2244 14.5425 16.2244C13.3725 16.2244 12.9938 16.7294 12.9938 17.2331C12.9938 17.8269 13.625 18.2056 15.1563 18.7819C17.2988 19.5381 18.165 20.5294 18.165 22.1506C18.165 23.7544 17.03 25.1219 14.9588 25.4831V27.3194H13.1913Z"
-              fill="#E7F3FC"
-            />
-          </svg>
-          <h2 class="title">Precios Súper Bajos</h2>
-        </div>
-        <div class="cards">
-          <div class="card basic">
-            <h3>Plan Básico</h3>
-            <p>Pago único de</p>
-            <h4 class="price">$50.000 ARS</h4>
-            <ul>
-              <li>Sitio web estático profesional</li>
-              <li>Hosting en GitHub Pages (sin costos adicionales)</li>
-              <li>Panel de administración con Sanity</li>
-              <li>
-                Dominio propio (dominio a cuenta del cliente, $10.000 mil
-                aprox.)
-              </li>
-              <li>
-                Funcionalidades avanzadas (tiendas online, interactividad en
-                tiempo real, paneles de usuarios con roles)
-              </li>
-              <li>
-                Suscripción mensual de mantenimiento (recomendado): $20.000 ARS
-              </li>
-            </ul>
-          </div>
-          <div class="card premium">
-            <h3>Premium</h3>
-            <p>Desde</p>
-            <h4 class="price">$100.000 ARS</h4>
-            <ul>
-              <li>Sitio web avanzado y dinámico a medida</li>
-              <li>Hosting y dominio propio (dominio a cuenta del cliente)</li>
-              <li>
-                Panel de administración personalizado (Sanity o sistema propio)
-              </li>
-              <li>Automatizaciones para optimizar tareas</li>
-              <li>
-                Funcionalidades avanzadas (tiendas online, interactividad en
-                tiempo real, paneles de usuarios con roles)
-              </li>
-              <li>
-                Suscripción mensual de mantenimiento (recomendado): desde
-                $50.000 ARS
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      </section>
+
+      <script src="./cotizador.js"></script>
       <div class="services" id="services">
         <h2 class="title">¿Qué ofrecemos?</h2>
         <ul class="cards">
