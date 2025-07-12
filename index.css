@@ -3,10 +3,16 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding-bottom: 5rem;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
 }
 .designs .titleContainer {
   margin-inline: auto;
+}
+.designs .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 .designs .card {
   display: flex;
@@ -46,7 +52,7 @@
   max-width: 20rem;
 }
 @media only screen and (max-width: 750px) {
-  .designs {
+  .designs .cards {
     gap: 5rem;
   }
   .designContent {
@@ -75,6 +81,9 @@
   margin: auto;
   padding: 1rem;
   border-radius: 1rem;
+}
+.cotizador .titleContainer {
+  margin-inline: auto;
 }
 .cotizador label {
   align-items: flex-start;
