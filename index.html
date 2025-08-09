@@ -2,13 +2,13 @@
 <html lang="es">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="./img/logo.svg" />
+    <link rel="icon" href="./img/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta name="author" content="Lautaro Waltersdorf" />
     <link rel="manifest" href="./manifest.json" />
-    <link rel="apple-touch-icon" href="./img/logo.svg" />
-    <link rel="icon" type="image/x-icon" href="./img/logo.svg" />
+    <link rel="apple-touch-icon" href="./img/logo.png" />
+    <link rel="icon" type="image/x-icon" href="./img/logo.png" />
     <title>Soluciones Digitales para Pymes | W Estudio</title>
     <meta
       name="description"
@@ -28,7 +28,7 @@
     />
     <meta
       property="og:image"
-      content="https://westudio.vercel.app/img/W-Estudio.png"
+      content="https://westudio.vercel.app/img/logo.png"
     />
 
     <!-- Twitter -->
@@ -44,7 +44,7 @@
     />
     <meta
       name="twitter:image"
-      content="https://westudio.vercel.app/img/W-Estudio.png"
+      content="https://westudio.vercel.app/img/logo.png"
     />
 
     <link rel="stylesheet" href="./initial.css" />
@@ -194,16 +194,6 @@
     </style>
   </head>
   <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-5MQL25B6"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-      ></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
     <header>
       <div class="logoContainer">
         <svg
@@ -344,7 +334,6 @@
         </label>
       </nav>
     </header>
-    <!-- <div class="transition-slideIn"></div> -->
     <main id="swup">
       <div class="heroSection">
         <div class="textContainer">
@@ -417,7 +406,7 @@
               )[0].innerHTML = `Aprovecha el alcance de la <span class="highlightText">web</span> para hacer <span class="highlightText">crecer tu negocio</span>`;
               document.getElementsByClassName(
                 "heroSubtitle"
-              )[0].innerHTML = `Impulsa tu marca con nuestro servicio<br /> de <span class="highlightText">Diseño Web Profesional</span>`;
+              )[0].innerHTML = `Impulsa tu marca con nuestras <span class="highlightText">soluciones digitales</span>`;
               document.getElementById(
                 "heroButton"
               ).innerHTML = `<?xml version="1.0" encoding="utf-8"?>
@@ -978,49 +967,7 @@
         </div>
       </footer>
     </main>
-    <!-- Swup
-    <script src="./swup.js"></script>
-    <script>
-      const swup = new Swup();
-      //swup hooks
-      swup.hooks.on("page:view", (visit) => {
-        document.getElementById("navButton").checked = false;
-      });
-    </script> -->
     <link rel="stylesheet" href="./index.css" />
     <link rel="stylesheet" href="./final.css" />
-    <script>
-      window.addEventListener("scroll", function loadTrackingScripts() {
-        // Google Tag Manager
-        (function (w, d, s, l, i) {
-          w[l] = w[l] || [];
-          w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-          var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s),
-            dl = l != "dataLayer" ? "&l=" + l : "";
-          j.async = true;
-          j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-          f.parentNode.insertBefore(j, f);
-        })(window, document, "script", "dataLayer", "GTM-5MQL25B6");
-
-        // Hotjar
-        (function (h, o, t, j, a, r) {
-          h.hj =
-            h.hj ||
-            function () {
-              (h.hj.q = h.hj.q || []).push(arguments);
-            };
-          h._hjSettings = { hjid: 5313976, hjsv: 6 };
-          a = o.getElementsByTagName("head")[0];
-          r = o.createElement("script");
-          r.async = 1;
-          r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-          a.appendChild(r);
-        })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
-
-        // Eliminar el eventListener después de la primera carga
-        window.removeEventListener("scroll", loadTrackingScripts);
-      });
-    </script>
   </body>
 </html>
