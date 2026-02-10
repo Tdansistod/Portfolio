@@ -98,8 +98,8 @@ const Education = () => {
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#024de6]/30 to-transparent" />
 
       {/* Background decoration */}
-      <div className="absolute top-1/3 left-0 w-56 h-56 bg-[#a855f7]/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-1/3 right-0 w-64 h-64 bg-[#10b981]/5 rounded-full blur-3xl" />
+      <div className="absolute top-1/3 left-0 w-56 h-56 bg-[#a855f7]/10 rounded-full opacity-60" />
+      <div className="absolute bottom-1/3 right-0 w-64 h-64 bg-[#10b981]/10 rounded-full opacity-60" />
 
       <div className="max-w-5xl mx-auto relative z-10">
         {/* Section Title */}
@@ -134,7 +134,7 @@ const Education = () => {
               }`}
               style={{ transitionDelay: `${index * 150}ms` }}
             >
-              <div className="relative h-full bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2 border border-transparent hover:border-[#024de6]/20 overflow-hidden">
+              <div className="relative h-full bg-white/90 rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2 border border-transparent hover:border-[#024de6]/20 overflow-hidden">
                 {/* Background gradient on hover */}
                 <div className="absolute inset-0 bg-gradient-to-br from-[#024de6]/5 via-transparent to-[#00d4ff]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
@@ -175,7 +175,7 @@ const Education = () => {
               : "opacity-0 translate-y-12"
           }`}
         >
-          <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-sm border border-black-100">
+          <div className="bg-white/90 rounded-2xl p-8 shadow-sm border border-black-100">
             {/* Languages Header */}
             <div className="flex items-center gap-3 mb-8">
               <div className="w-10 h-10 rounded-xl bg-[#024de6]/10 flex items-center justify-center">

@@ -87,16 +87,6 @@ const Hero = () => {
 
       <div className="max-w-5xl mx-auto text-center px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Pre-title */}
-        <div
-          className={`mb-6 transition-all duration-700 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-          }`}
-        >
-          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-[#024de6] font-medium">
-            <span className="w-2 h-2 bg-[#10b981] rounded-full animate-pulse" />
-            Disponible para proyectos
-          </span>
-        </div>
 
         {/* Main title with typing effect */}
         <h1
@@ -137,7 +127,16 @@ const Hero = () => {
           Creando experiencias digitales únicas con código limpio y diseño
           intuitivo. Especializado en React, Next.js y soluciones web a medida.
         </p>
-
+        <div
+          className={`mb-6 transition-all duration-300 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+          }`}
+        >
+          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-[#024de6] font-medium">
+            <span className="w-2 h-2 bg-[#10b981] rounded-full" />
+            Disponible para proyectos
+          </span>
+        </div>
         {/* CTA Buttons */}
         <div
           className={`flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 transition-all duration-700 ${

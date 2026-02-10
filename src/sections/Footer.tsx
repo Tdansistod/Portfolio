@@ -61,21 +61,6 @@ const Footer = () => {
               diseño intuitivo. Disponible para proyectos freelance y
               colaboraciones.
             </p>
-
-            {/* Contact info */}
-            <div className="flex flex-wrap gap-4">
-              <a
-                href="mailto:lautaronuriel@gmail.com"
-                className="flex items-center gap-2 text-white/60 hover:text-white transition-colors duration-300"
-              >
-                <Mail className="w-4 h-4" />
-                <span className="text-sm">lautaronuriel@gmail.com</span>
-              </a>
-              <span className="flex items-center gap-2 text-white/60">
-                <MapPin className="w-4 h-4" />
-                <span className="text-sm">Buenos Aires, Argentina</span>
-              </span>
-            </div>
           </div>
 
           {/* Quick links */}
@@ -130,12 +115,21 @@ const Footer = () => {
         </div>
 
         {/* Bottom bar */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-8 border-t border-white/10">
-          <p className="text-white/50 text-sm flex items-center gap-1">
-            © {currentYear} Waltersdorf Lautaro. Hecho con
-            <Heart className="w-4 h-4 text-red-500 fill-red-500 animate-pulse" />
-            en Buenos Aires
-          </p>
+        <div className="flex flex-col md:flex-row items-center justify-between gap-10 pt-8 border-t border-white/10">
+          {/* Contact info */}
+          <div className="flex flex-wrap gap-4">
+            <a
+              href="mailto:lautaronuriel@gmail.com"
+              className="flex items-center gap-2 text-white/60 hover:text-white transition-colors duration-300"
+            >
+              <Mail className="w-4 h-4" />
+              <span className="text-sm">lautaronuriel@gmail.com</span>
+            </a>
+            <span className="flex items-center gap-2 text-white/60">
+              <MapPin className="w-4 h-4" />
+              <span className="text-sm">Buenos Aires, Argentina</span>
+            </span>
+          </div>
 
           <button
             onClick={scrollToTop}

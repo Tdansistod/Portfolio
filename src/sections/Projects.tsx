@@ -240,13 +240,6 @@ const Projects = () => {
                   </a>
                 </div>
               </div>
-
-              {/* Divider line */}
-              {index < projects.length - 1 && (
-                <div className="mt-20 flex items-center justify-center">
-                  <div className="w-px h-16 bg-gradient-to-b from-transparent via-[#024de6]/30 to-transparent" />
-                </div>
-              )}
             </div>
           ))}
         </div>

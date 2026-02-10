@@ -29,11 +29,7 @@ const Header = () => {
       }`}
     >
       <div className="mx-4">
-        <nav
-          className={`rounded-full px-4 py-2 flex items-center justify-between max-w-7xl mx-auto transition-all duration-500 ${
-            isScrolled ? "glass-dark shadow-lg" : "bg-[#1a1a5e]"
-          }`}
-        >
+        <nav className="rounded-full px-4 py-2 flex items-center justify-between max-w-7xl mx-auto transition-all duration-500 bg-[#1a1a5e]">
           {/* Left side - Logo and Nav */}
           <div className="flex items-center gap-2 md:gap-6">
             {/* Logo with animation */}
@@ -54,7 +50,7 @@ const Header = () => {
             </div>
 
             {/* Navigation Links - Hidden on mobile */}
-            <div className="hidden md:flex items-center gap-1">
+            <div className="hidden md:flex items-center gap-1 ">
               {[
                 { id: "projects", label: "Proyectos" },
                 { id: "experience", label: "Experiencia" },
@@ -105,7 +101,7 @@ const Header = () => {
 
         {/* Mobile menu */}
         <div
-          className={`md:hidden mt-2 glass-dark rounded-2xl overflow-hidden transition-all duration-500 max-w-7xl mx-auto ${
+          className={`md:hidden mt-2 bg-[#1a1a5e] rounded-2xl overflow-hidden transition-all duration-500 max-w-7xl mx-auto ${
             isMobileMenuOpen ? "max-h-64 opacity-100" : "max-h-0 opacity-0"
           }`}
         >

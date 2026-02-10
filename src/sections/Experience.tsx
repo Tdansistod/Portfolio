@@ -86,8 +86,8 @@ const Experience = () => {
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#024de6]/30 to-transparent" />
 
       {/* Background decoration */}
-      <div className="absolute top-1/4 right-0 w-64 h-64 bg-[#024de6]/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-1/4 left-0 w-48 h-48 bg-[#00d4ff]/5 rounded-full blur-3xl" />
+      <div className="absolute top-1/4 right-0 w-64 h-64 bg-[#024de6]/5 rounded-full opacity-40" />
+      <div className="absolute bottom-1/4 left-0 w-48 h-48 bg-[#00d4ff]/5 rounded-full opacity-40" />
 
       <div className="max-w-5xl mx-auto relative z-10">
         {/* Section Title */}
@@ -131,7 +131,7 @@ const Experience = () => {
               >
                 {/* Timeline dot */}
                 <div
-                  className={`absolute left-4 md:left-1/2 w-4 h-4 rounded-full border-4 border-white shadow-lg transform -translate-x-1/2 transition-all duration-300 ${
+                  className={`absolute left-4 md:left-1/2 w-4 h-4 rounded-full border-4 border-white transform -translate-x-1/2 transition-all duration-300 ${
                     hoveredExp === exp.id
                       ? "bg-[#024de6] scale-150"
                       : "bg-[#024de6]/50"
@@ -147,7 +147,7 @@ const Experience = () => {
                       : "md:ml-[50%] md:pl-12"
                   }`}
                 >
-                  <div className="group relative bg-white/80 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2 border border-transparent hover:border-[#024de6]/20">
+                  <div className="group relative bg-white/90 rounded-2xl p-6 md:p-8 shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2 border border-transparent hover:border-[#024de6]/20">
                     {/* Glow effect on hover */}
                     <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-[#024de6]/5 to-[#00d4ff]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
