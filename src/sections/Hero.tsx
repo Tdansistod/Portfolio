@@ -86,8 +86,6 @@ const Hero = () => {
       </div>
 
       <div className="max-w-5xl mx-auto text-center px-4 sm:px-6 lg:px-8 relative z-10">
-        {/* Pre-title */}
-
         {/* Main title with typing effect */}
         <h1
           className={`text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 transition-all duration-700 ${
@@ -128,9 +126,10 @@ const Hero = () => {
           intuitivo. Especializado en React, Next.js y soluciones web a medida.
         </p>
         <div
-          className={`mb-6 transition-all duration-300 ${
+          className={`mb-6 transition-all duration-700 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
+          style={{ transitionDelay: "0.8s" }}
         >
           <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-[#024de6] font-medium">
             <span className="w-2 h-2 bg-[#10b981] rounded-full" />
