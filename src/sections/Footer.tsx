@@ -1,8 +1,6 @@
-import { ExternalLink, Heart, ArrowUpRight, Mail, MapPin } from "lucide-react";
+import { ExternalLink, ArrowUpRight, Mail, MapPin } from "lucide-react";
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
-
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
