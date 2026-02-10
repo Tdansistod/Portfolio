@@ -65,11 +65,11 @@ const Footer = () => {
             {/* Contact info */}
             <div className="flex flex-wrap gap-4">
               <a
-                href="mailto:contact@waltersdorf.com"
+                href="mailto:lautaronuriel@gmail.com"
                 className="flex items-center gap-2 text-white/60 hover:text-white transition-colors duration-300"
               >
                 <Mail className="w-4 h-4" />
-                <span className="text-sm">contact@waltersdorf.com</span>
+                <span className="text-sm">lautaronuriel@gmail.com</span>
               </a>
               <span className="flex items-center gap-2 text-white/60">
                 <MapPin className="w-4 h-4" />
